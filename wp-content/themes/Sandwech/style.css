@@ -1,0 +1,26 @@
+/*
+Theme Name: Sandwech
+Author: Mattia Zanini
+Description: Sandwech web app
+Requires at least: 6.1
+Tested up to: 6.1
+Requires PHP: 5.6
+Version: 1.0
+Text Domain: sandwech
+*/
+
+body {
+    background-color: whitesmoke !important;
+}
+
+.navbar {
+    margin-bottom: 1vw;
+}
+
+.navbar-color {
+    background-color: #fff48f !important;
+}
+
+.logo-img {
+    margin-left: 2vw !important;
+}
