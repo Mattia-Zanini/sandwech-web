@@ -1,15 +1,15 @@
 $(window).on('load', function () {
     var cookies = CookiesToObject(document.cookie);
-    if (cookies.hasOwnProperty('userLoginData') == false) {
-        window.location.replace("http://localhost/sandwech-web/login.php");
-    }
 
-    /*document.cookie = CreateCookie("userLoginData", {
+    document.cookie = CreateCookie("userLoginData", {
         "userName": "Pietro",
         "password": "123456",
-    }, addDaysToDate(3));*/
+    }, addDaysToDate(1));
+    console.log(cookies);
 
-    //console.log(document.cookie);
+    if (cookies.hasOwnProperty('userLoginData') == false) {
+        window.location.replace("http://localhost/sandwech-web/login");
+    }
 });
 
 // Questa funzione accetta una stringa di cookie come input
@@ -25,7 +25,11 @@ function CookiesToObject(cookies) {
         // Dividiamo l'elemento corrente sui caratteri "=" in un array
         const cur = str[i].split('=');
         // Assegniamo il valore del primo elemento dell'array come chiave dell'oggetto "result" e il valore del secondo elemento come valore
-        result[cur[0]] = cur[1];
+        try {
+            result[cur[0]] = JSON.parse(cur[1]);
+        } catch (error) {
+            result[cur[0]] = cur[1];
+        }
     }
     // Restituiamo l'oggetto "result" che contiene i singoli cookie come coppie chiave-valore
     return result;

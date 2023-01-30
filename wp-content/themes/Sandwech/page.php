@@ -19,3 +19,9 @@ e il contenuto delle singole pagine del sito, può contenere codice HTML, CSS e 
 e le personalizzazioni create nel file functions.php. Se non presente, wordpress utilizzerà il file index.php o un 
 template personalizzato per mostrare la pagina.
 -->
+
+<?php
+if (is_page('login')) {
+    get_template_part('templates/page', 'login');
+}
+?>

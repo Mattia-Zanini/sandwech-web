@@ -1,0 +1,14 @@
+.login-body {
+    /*background-color: #d0cece;*/
+    background-color: #ff904c85;
+    min-height: 100vh;
+}
+
+.login-card {
+    max-height: 60vh;
+    border-radius: 20px;
+}
+
+.login-card-img {
+    object-fit: cover;
+}

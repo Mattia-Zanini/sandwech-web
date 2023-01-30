@@ -25,12 +25,3 @@ incluso in ogni pagina del sito, quindi è possibile utilizzarlo per creare un'i
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-color">
-            <div class="container-fluid">
-                <a class="navbar-brand mb-0 h1" href="http://localhost/sandwech-web">Sandwech App</a>
-                <img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" width="40"
-                    height="40" alt="">
-            </div>
-        </nav>
-    </header>
