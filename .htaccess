@@ -1,3 +1,6 @@
+#BEGIN Really Simple SSL LETS ENCRYPT
+RewriteRule ^.well-known/(.*)$ - [L]
+#END Really Simple SSL LETS ENCRYPT
 # BEGIN W3TC Browser Cache
 <IfModule mod_mime.c>
     AddType text/css .css
@@ -192,5 +195,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /sandwech-web/index.php [L]
 </IfModule>
-
 # END WordPress

@@ -1,1 +1,1 @@
-<Ÿc<?php exit; ?>a:1:{s:7:"content";s:175:"{"common.install":1675168021,"common.install_version":"2.2.12","license.status":"no_key","license.next_check":1675600021,"license.terms":"","license.community_terms":"accept"}";}
+[çŸc<?php exit; ?>a:1:{s:7:"content";s:271:"{"common.install":1675168021,"common.install_version":"2.2.12","license.status":"no_key","license.next_check":1675600021,"license.terms":"","license.community_terms":"accept","common.show_note.plugins_updated":true,"common.show_note.plugins_updated.timestamp":1675201554}";}
