@@ -1,11 +1,11 @@
 .login-body {
     /*background-color: #d0cece;*/
-    background-color: #ff904c85;
+    background-color: #ff762093;
     min-height: 100vh;
 }
 
 .login-card-shadow {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
 }
 
 .login-card-img {

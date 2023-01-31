@@ -22,6 +22,6 @@ template personalizzato per mostrare la pagina.
 
 <?php
 if (is_page('login-page')) {
-    get_template_part('templates/page', 'login');
+    get_template_part('pages/page', 'login');
 }
 ?>
