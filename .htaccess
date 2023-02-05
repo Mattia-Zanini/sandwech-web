@@ -182,6 +182,10 @@ RewriteRule ^.well-known/(.*)$ - [L]
     RewriteRule .* "C:/xampp/htdocs/sandwech-web/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_SLASH}%{ENV:W3TC_SSL}%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" [L]
 </IfModule>
 # END W3TC Page Cache core
+
+#Begin Really Simple Security
+Options -Indexes
+#End Really Simple Security
 # BEGIN WordPress
 # Le direttive (linee) tra `BEGIN WordPress` e `END WordPress` sono
 # generate dinamicamente, e dovrebbero essere modificate solo tramite i filtri di WordPress.

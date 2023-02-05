@@ -17,15 +17,15 @@
                             alt="photo" style="width: 25%; margin-top: 20%; margin-bottom: 5%;">
                     </div>
                     <div class="row">
-                        <div class="form-group mt-3">
-                            <label for="email" class="">Email</label>
-                            <input type="email" name="email" id="emailInput" class="form-control" placeholder="">
+                        <div class="form-floating mt-3">
+                            <input type="email" id="emailInput" class="form-control" placeholder="Email">
+                            <label style="margin-left: 0.6vw;" for="floatingInput">Email</label>
                         </div>
-                        <div class="form-group mb-4 mt-4">
-                            <label for="password" class="">Password</label>
-                            <input type="password" name="password" id="passwordInput" class="form-control"
-                                placeholder="">
+                        <div class="form-floating mb-4 mt-4">
+                            <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+                            <label style="margin-left: 0.6vw;" for="floatingPassword">Password</label>
                         </div>
+
                         <button class="btn btn-primary" id="login-btn" style="margin-top: 25%; width: 20%;">
                             Login
                         </button>
@@ -36,24 +36,51 @@
     </div>
 </main>
 
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies_utils.js"></script>
 <script text="text/javascript">
-$("button#login-btn").click(function() {
-    $.ajax({
-        url: "/food-api/API/user/login.php",
-        type: "POST",
-        data: JSON.stringify({
-            "email": $("#emailInput").val(),
-            "password": $("#passwordInput").val(),
-        }),
-        success: function(result) {
-            var loginAnswer = result["response"];
-        },
-        error: function(request, status, error) {
-            var result = JSON.parse(request.responseText);
-            var loginAnswer = result["response"];
-        }
+    $("button#login-btn").click(function () {
+        var username = $("#emailInput").val();
+        var password = $("#passwordInput").val();
+
+        if (username != "" && password != "")
+            $.ajax({
+                url: "/food-api/API/user/login.php",
+                type: "POST",
+                data: JSON.stringify({
+                    "email": username,
+                    "password": password,
+                }),
+                success: function (result) {
+                    var loginResult = result["response"];
+                    console.log(loginResult);
+
+                    if (loginResult != true)
+                        location.reload();
+                    else {
+                        alert("Credenziali corrette");
+
+                        var cookies = CookiesToObject(document.cookie);
+                        document.cookie = CreateCookie("userLoginData", {
+                            "userName": username,
+                            "password": password
+                        }, addDaysToDate(1));
+                        console.log(cookies);
+                        window.location.replace("http://localhost/sandwech-web/");
+                    }
+                },
+                error: function (request, status, error) {
+                    var result = JSON.parse(request.responseText);
+                    var loginResult = result["response"];
+                    console.log(loginResult);
+
+                    location.reload();
+                }
+            });
+
+        else
+            alert("Compila tutti i campi");
     });
-});
 </script>
 
 <?php get_footer(); ?>
