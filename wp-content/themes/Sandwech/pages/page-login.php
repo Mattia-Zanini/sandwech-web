@@ -18,15 +18,17 @@
                     </div>
                     <div class="row">
                         <div class="form-floating mt-3">
-                            <input type="email" id="emailInput" class="form-control" placeholder="Email">
+                            <input type="email" id="emailInput" class="form-control inputFields" placeholder="Email">
                             <label style="margin-left: 0.6vw;" for="floatingInput">Email</label>
                         </div>
                         <div class="form-floating mb-4 mt-4">
-                            <input type="password" id="passwordInput" class="form-control" placeholder="Password">
+                            <input type="password" id="passwordInput" class="form-control inputFields"
+                                placeholder="Password">
                             <label style="margin-left: 0.6vw;" for="floatingPassword">Password</label>
                         </div>
 
-                        <button class="btn btn-primary" id="login-btn" style="margin-top: 25%; width: 20%;">
+                        <button class="btn btn-primary" id="login-btn"
+                            style="margin-left: 0.6vw; margin-top: 25%; width: 20%;">
                             Login
                         </button>
                     </div>
@@ -38,8 +40,17 @@
 
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies_utils.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/input_utils.js"></script>
 <script text="text/javascript">
+    $('.inputFields').pressEnter(function () {
+        SendLogin();
+    });
+
     $("button#login-btn").click(function () {
+        SendLogin();
+    });
+
+    function SendLogin() {
         var username = $("#emailInput").val();
         var password = $("#passwordInput").val();
 
@@ -58,13 +69,13 @@
                     if (loginResult != true)
                         location.reload();
                     else {
-                        alert("Credenziali corrette");
+                        //alert("Credenziali corrette");
 
                         var cookies = CookiesToObject(document.cookie);
                         document.cookie = CreateCookie("userLoginData", {
                             "userName": username,
                             "password": password
-                        }, addDaysToDate(1));
+                        }, addDaysToDate(20));
                         console.log(cookies);
                         window.location.replace("http://localhost/sandwech-web/");
                     }
@@ -80,7 +91,7 @@
 
         else
             alert("Compila tutti i campi");
-    });
+    }
 </script>
 
 <?php get_footer(); ?>
