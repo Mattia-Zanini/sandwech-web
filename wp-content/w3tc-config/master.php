@@ -96,7 +96,7 @@
     ],
     "lazyload.embed_method": "async_head",
     "objectcache.configuration_overloaded": false,
-    "objectcache.enabled": true,
+    "objectcache.enabled": false,
     "objectcache.debug": false,
     "objectcache.debug_purge": false,
     "objectcache.enabled_for_wp_admin": false,

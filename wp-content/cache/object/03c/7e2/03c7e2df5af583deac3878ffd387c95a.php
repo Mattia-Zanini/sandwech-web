@@ -1,1 +1,1 @@
-'(àc<?php exit; ?>a:1:{s:7:"content";a:1:{s:22:"burst_options_settings";b:1;}}
+´`æc<?php exit; ?>a:1:{s:7:"content";a:0:{}}

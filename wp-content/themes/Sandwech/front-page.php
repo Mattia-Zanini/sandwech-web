@@ -28,6 +28,8 @@ il codice per ogni singola pagina.
 */
 get_header();
 ?>
+<link href="<?php echo get_template_directory_uri(); ?>/css/front-page.css" rel="stylesheet" type="text/css">
+
 
 <div class="container-fluid">
     <div class="row">

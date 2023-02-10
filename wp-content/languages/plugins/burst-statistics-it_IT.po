@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Burst Statistics &#8211; Privacy-Friendly Analytics for WordPress - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-18 14:15:35+0000\n"
+"PO-Revision-Date: 2023-02-08 14:20:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -167,7 +167,7 @@ msgstr "Licenza mancante."
 msgid "Burst cannot be activated. The plugin requires WordPress 5.0 or higher"
 msgstr "Burst non può essere attivato. Il plugin richiede WordPress 5.0 o superiore"
 
-#: class-admin.php:457 upgrade/upgrade-to-pro.php:371
+#: class-admin.php:440 upgrade/upgrade-to-pro.php:371
 msgid "Cancel"
 msgstr "Cancella"
 
@@ -197,15 +197,15 @@ msgstr "Copia"
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: class-admin.php:444 class-admin.php:458
+#: class-admin.php:427 class-admin.php:441
 msgid "Deactivate"
 msgstr "Disattiva"
 
-#: class-admin.php:459
+#: class-admin.php:442
 msgid "Deactivate and delete all data"
 msgstr "Disattiva e cancella ogni dato"
 
-#: class-admin.php:446
+#: class-admin.php:429
 msgid "Deactivate, and remove all statistics, experiments and settings."
 msgstr "Disattiva e rimuovi ogni statistica, esperimento e impostazione."
 
@@ -213,8 +213,8 @@ msgstr "Disattiva e rimuovi ogni statistica, esperimento e impostazione."
 msgid "Devices"
 msgstr "Dispositivi"
 
-#: statistics/class-statistics.php:209 statistics/class-statistics.php:637
-#: statistics/class-statistics.php:845 statistics/class-statistics.php:1040
+#: statistics/class-statistics.php:209 statistics/class-statistics.php:613
+#: statistics/class-statistics.php:822 statistics/class-statistics.php:1018
 msgid "Direct"
 msgstr "Diretto"
 
@@ -226,7 +226,7 @@ msgstr "Non mostrare più"
 msgid "Easily migrate your website to SSL"
 msgstr "Migra facilmente il tuo sito web verso SSL"
 
-#: functions.php:106
+#: functions.php:150
 msgid "For more information on this subject, please read this %sarticle%s"
 msgstr "Per maggiori informazioni su questo argomento, leggi questo %sarticolo%s"
 
@@ -234,7 +234,7 @@ msgstr "Per maggiori informazioni su questo argomento, leggi questo %sarticolo%s
 msgid "Hi, you have been using Burst for more than a month now, awesome!"
 msgstr "Ciao, ormai usi Burst da oltre un mese, ottimo!"
 
-#: statistics/class-statistics.php:865 statistics/class-statistics.php:1048
+#: statistics/class-statistics.php:842 statistics/class-statistics.php:1026
 msgid "Homepage"
 msgstr "Pagina principale"
 
@@ -293,11 +293,11 @@ msgstr "Apri"
 msgid "Other Plugins"
 msgstr "Altri plugin"
 
-#: statistics/class-statistics.php:541
+#: statistics/class-statistics.php:524
 msgid "Page"
 msgstr "Pagina"
 
-#: class-admin.php:267 settings/templates/wordpress/dashboard-widget.php:34
+#: class-admin.php:250 settings/templates/wordpress/dashboard-widget.php:34
 #: settings/templates/wordpress/dashboard-widget.php:44
 #: statistics/class-statistics.php:134 settings/build/index.js:382
 #: settings/src/Statistics/CompareBlock.js:18
@@ -329,20 +329,20 @@ msgstr "Salva"
 msgid "Sessions"
 msgstr "Sessioni"
 
-#: class-admin.php:154 settings/config/config.php:20
+#: class-admin.php:155 settings/config/config.php:20
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: class-frontend.php:33 settings/config/config.php:14 settings/settings.php:95
+#: class-frontend.php:33 settings/config/config.php:14 settings/settings.php:85
 #: settings/templates/wordpress/dashboard-widget.php:54
 msgid "Statistics"
 msgstr "Statistiche"
 
-#: class-admin.php:161 settings/build/index.js:382 settings/src/Header.js:42
+#: class-admin.php:162 settings/build/index.js:382 settings/src/Header.js:42
 msgid "Support"
 msgstr "Supporto"
 
-#: class-admin.php:447
+#: class-admin.php:430
 msgid "The data will be gone forever."
 msgstr "I dati spariranno per sempre."
 
@@ -354,12 +354,12 @@ msgstr "Questo campo è necessario. Completa la domanda prima di continuare"
 msgid "Tips & Tricks"
 msgstr "Trucchi e consigli"
 
-#: class-admin.php:441
+#: class-admin.php:424
 msgid "To deactivate the plugin correctly, please select if you want to:"
 msgstr "Per disattivare correttamente il plugin, seleziona se vuoi che:"
 
 #: settings/config/config.php:205 settings/build/index.js:382
-#: settings/src/Statistics/DateRange/DateRange.js:42
+#: settings/src/Statistics/DateRange/DateRange.js:62
 msgid "Today"
 msgstr "Oggi"
 
