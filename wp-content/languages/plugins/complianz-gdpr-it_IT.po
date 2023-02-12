@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-18 08:08:23+0000\n"
+"PO-Revision-Date: 2023-02-11 11:04:26+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -382,7 +382,7 @@ msgstr "Abbiamo abbandonato il supporto per la creazione di un cookie banner con
 
 #: class-admin.php:69
 msgid "Get detailed insights into visitors' behavior with Burst Statistics, the privacy-friendly analytics dashboard from Really Simple Plugins"
-msgstr "Ottieni informazioni dettagliate sul comportamento dei visitatori con Burst Statistics, la dashboard di analisi rispettosa della privacy di Really Simple Plugins."
+msgstr "Ottieni approfondimenti dettagliati sul comportamento dei visitatori con Burst Statistics, la dashboard di analisi rispettoso della privacy di Really Simple Plugins"
 
 #: class-admin.php:57
 msgid "Self-hosted and privacy-friendly analytics tool"
@@ -1190,8 +1190,8 @@ msgstr "Continua la procedura guidata per categorizzare i cookie e configurare i
 #: cookie/class-cookie-admin.php:3321
 msgid "The scan found %s cookie on your domain."
 msgid_plural "The scan found %s cookies on your domain."
-msgstr[0] "La scansione ha trovato %s cookie nel tuo domain."
-msgstr[1] "La scansione ha trovato %s cookie nel tuo domain."
+msgstr[0] "La scansione ha trovato 1 cookie nel tuo dominio."
+msgstr[1] "La scansione ha trovato %s cookie nel tuo dominio."
 
 #: config/steps.php:74
 msgid "To change these settings, please visit the script center."
@@ -1367,7 +1367,7 @@ msgstr "Volete usare il reindirizzamento regionale sui documenti pertinenti?"
 
 #: config/questions-wizard.php:898
 msgid "GEO IP based redirect is available in %sPremium%s"
-msgstr "Reindirizzamento basato su IP GEO è disponibile con %sPremium%s"
+msgstr "Il reindirizzamento basato su IP GEO è disponibile in %spremium%s"
 
 #: config/questions-wizard.php:892
 msgid "No, choose a menu per document"
@@ -1604,7 +1604,7 @@ msgstr "Disattiva Complianz su questa pagina"
 
 #: config/questions-wizard.php:442
 msgid "You can also enable Google Consent Mode."
-msgstr "Puoi anche abilitare la Modalità Consenso di Google."
+msgstr "Puoi anche attivare la modalità di consenso di Google."
 
 #: config/questions-wizard.php:92
 msgid "Does your site have visitors with log-in access to a restricted area of the website?"
@@ -1694,7 +1694,7 @@ msgstr "Recapiti"
 
 #: cookiebanner/settings.php:645
 msgid "This button will reject all cookies except necessary cookies, and dismisses the cookie banner."
-msgstr "Questo pulsante rifiuterà tutti i cookie, tranne quelli necessari, e chiude il cookie banner."
+msgstr "Questo pulsante rifiuta tutti i cookie, tranne quelli necessari, e chiude il banner dei cookie."
 
 #: config/questions-wizard.php:57
 msgid "Which banner do you want to display in other regions?"
@@ -1742,7 +1742,7 @@ msgstr "Descrizione servizio"
 
 #: config/steps.php:82
 msgid "We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date on a regular basis."
-msgstr "Ci colleghiamo a questo database open-source tramite un'API esterna, che invia i risultati della scansione dei cookie (un elenco dei cookie trovati, dei plugin utilizzati e del tuo dominio) a cookiedatabase.org, al solo scopo di fornire descrizioni accurate e di mantenerle aggiornate regolarmente."
+msgstr "Ci connettiamo a questo database open-source usando un'API esterna, che invia i risultati del cookiescan (una lista di cookie trovati, plugin usati e il tuo dominio) a cookiedatabase.org, al solo scopo di fornirti descrizioni accurate e tenerle aggiornate con cadenza settimanale."
 
 #: config/steps.php:80
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by cookiedatabase.org."
@@ -2047,7 +2047,7 @@ msgstr "la fonte della pagina"
 
 #: functions.php:135
 msgid "Due to the French CNIL guidelines we suggest using the Accept - Deny - View preferences template. For more information, read about the CNIL updated privacy guidelines in this %sarticle%s."
-msgstr "A causa delle linee guida della CNIL francese, suggeriamo di utilizzare il modello di preferenza Accetta - Rifiuta - Visualizza. Per maggiori informazioni, leggi le linee guida CNIL aggiornate sulla privacy in questo %sarticolo%s."
+msgstr "A causa delle linee guida della CNIL francese, suggeriamo di utilizzare il modello di preferenze Accetta + Visualizza. Per maggiori informazioni, leggi le linee guida CNIL aggiornate sulla privacy in questo %sarticolo%s."
 
 #: templates/dashboard/tools-conditional.php:27
 msgid "Create a Data Leak Inventory"
@@ -2165,7 +2165,7 @@ msgstr "Tutte le attività (%s)"
 
 #: class-admin.php:829
 msgid "Upgrade to Pro"
-msgstr "Aggiorna a Pro"
+msgstr "Aggiorna a pro"
 
 #: class-admin.php:71 class-admin.php:72 class-admin.php:826
 #: upgrade/upgrade-to-pro.php:190
@@ -2349,11 +2349,11 @@ msgstr "Do Not Track e Global Privacy Control non sono ancora rispettati."
 
 #: config/questions-wizard.php:459
 msgid "For the Google Analytics tracking ID, log on and click Admin and copy the tracking ID."
-msgstr "Per il tracking ID di Google Analytics accedi e fai clic su Admin e copia il tracking ID."
+msgstr "Per il tracking-ID di Google Analytics accedi e fai clic su Admin e copia il Tracking-ID."
 
 #: config/questions-wizard.php:454
 msgid "Enter your tracking ID"
-msgstr "Immetti il tuo tracking ID"
+msgstr "Immetti il tuo tracking-ID"
 
 #: templates/cookiepolicy/services.php:9
 msgctxt "cookie policy"
@@ -2541,7 +2541,7 @@ msgstr "Il tuo sito usa Divi. Se usi reCAPTCHA sul tuo sito, potresti dover disa
 
 #: callback-notices.php:100
 msgid "The cookie scan detected cookies from services that share data with Third Parties. According to US privacy laws, your website is considered to sell personal data if it collects and shares any personal data in return for money or services. This includes a service like Google Analytics."
-msgstr "La scansione dei cookie ha rilevato i cookie di servizi che condividono i dati con terze parti. Secondo le leggi sulla privacy degli Stati Uniti, si considera che il sito web venda dati personali se raccoglie e condivide dati personali in cambio di denaro o servizi. Ciò include un servizio come Google Analytics."
+msgstr "La scansione cookie ha rilevato cookie da servizi che condividono dati con Terze Parti. In conformità con la CCPA, il tuo sito web viene considerato come un venditore di dati secondo i termini della CCPA se colleziona e condivide qualsiasi informazione personale con Terze Parti in cambio di soldi o servizi. Questi includono servizi come Google Analytics."
 
 #: class-field.php:2057 cookie/class-cookie-admin.php:3623
 msgid "Services in %s"
@@ -2980,7 +2980,7 @@ msgstr "Questa politica sui cookie è stata sincronizzata con %scookiedatabase.o
 
 #: config/general-settings.php:66
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by %scookiedatabase.org%s. We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date on a regular basis. For more information, read the %sPrivacy Statement%s"
-msgstr "Complianz fornisce la vostra Cookie Policy con descrizioni complete dei cookie, fornite da %scookiedatabase.org%s. Ci connettiamo a questo database open-source utilizzando un'API esterna, che invia i risultati della scansione dei cookie (un elenco dei cookie trovati, dei plugin utilizzati e del tuo dominio) a cookiedatabase.org, al solo scopo di fornire descrizioni accurate e di mantenerle aggiornate regolarmente. Per ulteriori informazioni, leggere %sl'Informativa sulla privacy%s"
+msgstr "Complianz fornisce una descrizione comprensiva per la tua Cookie Policy, grazie a %scookiedatabase.org%s. Ci connettiamo a questo database open-source usando un API esterno, che invia il risultato della scansione dei cookie (una lista dei cookie trovati, plugin utilizzati ed il tuo domain) a cookiedatabase.org, per il solo scopo di fornirti descrizioni accurate e mantenerle aggiornate su base settimanale. Per ulteriori informazioni, leggi la %sDichiarazione sulla Privacy%s"
 
 #: callback-notices.php:37
 msgid "Please make sure you remove your current implementation to prevent double statistics tracking."
@@ -3914,7 +3914,7 @@ msgstr "Sito web:"
 #: config/documents/cookie-policy-za.php:186
 msgctxt "Legal document cookie policy:paragraph title"
 msgid "Contact details"
-msgstr "Dettagli contatti"
+msgstr "Dettagli di contatto"
 
 #: config/documents/cookie-policy-br.php:155
 #: config/documents/cookie-policy-ca.php:152
@@ -4165,7 +4165,7 @@ msgstr "Informazioni mediche"
 
 #: config/purpose.php:39
 msgid "Financial information such as bank account number or credit card number"
-msgstr "Informazioni finanziarie come il numero del conto bancario o della carta di credito"
+msgstr "Informazione finanziari come numero conto bancario o numero carta di credito"
 
 #: config/purpose.php:38
 msgid "Employment history"
@@ -4320,7 +4320,7 @@ msgstr "Stai usando un blocco per la pubblicità. Questo previene il piazzamento
 
 #: templates/integrations/custom-scripts.php:2
 msgid "The script center should be used to add and block third-party scripts and iFrames before consent is given, or when consent is revoked. For example Hotjar and embedded video’s."
-msgstr "Lo script center deve essere utilizzato per aggiungere e bloccare script di terze parti e iFrame prima che venga fornito il consenso o quando questo viene revocato. Ad esempio Hotjar e video incorporati."
+msgstr "Il centro di script deve essere utilizzato per aggiungere e bloccare script di terze parti e iFrame prima che venga fornito il consenso o quando viene revocato il consenso. Ad esempio Hotjar e video incorporati."
 
 #: templates/dashboard/tools-footer.php:2
 msgid "System Status"
@@ -4399,7 +4399,7 @@ msgstr "Marketing"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:115
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:116
 msgid "View Preferences"
-msgstr "Visualizza le preferenze"
+msgstr "Visualizza preferenze"
 
 #: cookiebanner/settings.php:670 cookiebanner/settings.php:671
 #: cookiebanner/settings.php:672
@@ -4499,7 +4499,7 @@ msgstr "La scansione ha trovato servizi di terze parti nel tuo sito web: %s, que
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:499
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:714
 msgid "Border Color"
-msgstr "Colore del bordo"
+msgstr "Colore bordo"
 
 #: class-wizard.php:723
 msgid "View document"

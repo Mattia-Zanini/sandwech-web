@@ -5,9 +5,6 @@
 @ini_set('session.use_only_cookies', true);
 //END Really Simple SSL cookie settings
 
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
-
 /**
  * Il file base di configurazione di WordPress.
  *

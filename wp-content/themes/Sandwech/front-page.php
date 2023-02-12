@@ -32,9 +32,32 @@ get_header();
 
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h1 id="cookies">Ciao</h1>
+    <div class="row" style="margin-top: 2vh;">
+        <div class="col-1">
+            <img style="max-width: 5vw; margin-left: 2vw;"
+                src="<?php echo get_template_directory_uri(); ?>/assets/logo.png">
+        </div>
+        <div class="col-1 offset-1" style="margin-left: 4vw;">
+            <a href="#" class="noulink-black">
+                <h1 class="nav-menu">Home</h1>
+            </a>
+        </div>
+        <div class="col-1">
+            <a href="#" class="noulink-black">
+                <h1 class="nav-menu">Ordina</h1>
+            </a>
+        </div>
+    </div>
+    <div class=" row" style="margin-top: 13vh; margin-left: 10vw;">
+        <div class="col-5">
+            <h1 class="front-page-title">Delicious</h1>
+            <h1 class="front-page-subtitle">Food-Place</h1>
+            <p class="front-page-paragraph">
+                Siamo fieri di offrire una vasta selezione di panini deliziosi, realizzati con ingredienti freschi e di
+                alta qualità. Siamo convinti che ogni persona meriti un pasto delizioso e nutriente, per questo mettiamo
+                il massimo impegno nella preparazione dei nostri panini. Scegli il tuo preferito o provali tutti, siamo
+                certi che non te ne pentirai! Venite a trovarci e gustate la vera essenza del panino.</p>
+            <button class="btn btn-to-order">ORDINA ORA</button>
         </div>
     </div>
 </div>

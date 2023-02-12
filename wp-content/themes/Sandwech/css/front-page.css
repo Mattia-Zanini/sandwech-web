@@ -7,3 +7,45 @@ body {
     colore figo per i bottoni
     background-color: #a81f0f; */
 }
+
+.front-page-title {
+    font-family: NotoSerifKhojki-Bold;
+    font-style: italic;
+    color: #f5a639;
+    font-size: 7vw;
+}
+
+.front-page-subtitle {
+    font-family: Courgette;
+    font-weight: 300;
+    font-size: 3vw;
+    margin-bottom: 2.2vh;
+}
+
+.front-page-paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+}
+
+.btn-to-order {
+    background-color: #f5a639;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2vw;
+    margin-top: 2.6vh;
+    width: 9.5vw;
+    height: 6.5vh;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+}
+
+.btn-to-order:hover {
+    background-color: #d17f0b;
+    color: white;
+}
+
+.nav-menu {
+    font-size: 1.5vw;
+    font-family: 'Varela Round', sans-serif;
+    line-height: 7vh;
+}

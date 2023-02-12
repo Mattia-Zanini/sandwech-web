@@ -9,18 +9,30 @@ Version: 1.0
 Text Domain: sandwech
 */
 
+@font-face {
+    font-family: NotoSerifKhojki-Bold;
+    src: url("assets/fonts/Noto_Serif_Khojki/static/NotoSerifKhojki-Bold.ttf");
+}
+
+@font-face {
+    font-family: Courgette;
+    src: url("assets/fonts/Courgette/Courgette-Regular.ttf");
+}
+
+.noulink {
+    text-decoration: none;
+}
+
+.noulink-black {
+    text-decoration: none;
+    color: black;
+}
+
+.noulink-black:hover {
+    text-decoration: none;
+    color: black;
+}
+
 /*body {
     background-color: whitesmoke !important;
 }*/
-
-.navbar {
-    margin-bottom: 1vw;
-}
-
-.navbar-color {
-    background-color: #fff48f !important;
-}
-
-.logo-img {
-    margin-left: 2vw !important;
-}
