@@ -49,11 +49,11 @@ get_header();
         </div>
         <div class="col-1 offset-6" style="background-color: #ffffff; border-radius: 50px; width: 10vw;">
             <div class="row">
-                <div class="icon-circle col-2 offset-1" style="margin-left: 1.2vw;">
+                <div id="cart-icon" class="icon-circle col-2 offset-1" style="margin-left: 1.2vw;">
                     <img style="width: 1.7vw; max-width: 1.7vw; margin-top: 1.3vh;"
                         src="<?php echo get_template_directory_uri(); ?>/assets/svg/shopping-cart-white.svg" />
                 </div>
-                <div class="icon-circle col-2 offset-2">
+                <div id="user-icon" class="icon-circle col-2 offset-2">
                     <img style="max-width: 1.7vw; margin-top: 1.3vh;"
                         src="<?php echo get_template_directory_uri(); ?>/assets/svg/user-white.svg" />
                 </div>
@@ -76,6 +76,14 @@ get_header();
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies_utils.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
+<script text="text/javascript">
+    $("#user-icon").click(function () {
+        window.location.href = "http://localhost/sandwech-web/profile";
+    });
+    $("#cart-icon").click(function () {
+        window.location.href = "http://localhost/sandwech-web/cart";
+    });
+</script>
 
 <?php
 /*

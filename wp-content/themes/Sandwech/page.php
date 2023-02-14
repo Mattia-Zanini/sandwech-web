@@ -24,4 +24,13 @@ template personalizzato per mostrare la pagina.
 if (is_page('login-page')) {
     get_template_part('pages/page', 'login');
 }
+if (is_page('profile')) {
+    get_template_part('pages/page', 'profile');
+}
+if (is_page('cart')) {
+    get_template_part('pages/page', 'cart');
+}
+if (is_page('order')) {
+    get_template_part('pages/page', 'order');
+}
 ?>

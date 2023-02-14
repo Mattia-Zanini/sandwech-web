@@ -1,3 +1,4 @@
+var cookies = null;
 //$(window).on('load', function () {
 $(document).ready(function () {
     var cookies = CookiesToObject(document.cookie);
@@ -9,7 +10,8 @@ $(document).ready(function () {
         /*
         document.cookie = CreateCookie("userLoginData", {
             "userName": cookies["userLoginData"]["userName"],
-            "password": cookies["userLoginData"]["password"]
+            "password": cookies["userLoginData"]["password"],
+            "userID": cookies["userLoginData"]["userID"]
         }, addDaysToDate(20));
         */
         console.log(cookies);

@@ -74,7 +74,8 @@
                         var cookies = CookiesToObject(document.cookie);
                         document.cookie = CreateCookie("userLoginData", {
                             "userName": username,
-                            "password": password
+                            "password": password,
+                            "userID": result["userID"]
                         }, addDaysToDate(20));
                         console.log(cookies);
                         window.location.replace("http://localhost/sandwech-web/");
