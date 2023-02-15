@@ -19,8 +19,9 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/HItem.js"></script>
 <script text="text/javascript">
+    var cookieUserData = null;
     $(document).ready(function () {
-        var cookieUserData = CookiesToObject(document.cookie)["userLoginData"];
+        cookieUserData = CookiesToObject(document.cookie)["userLoginData"];
         console.log(cookieUserData);
         GetUserCart(cookieUserData["userID"]);
 
@@ -28,10 +29,6 @@
         console.log(Math.floor(17 / 4));
         console.log(Math.floor(4.9));
         */
-
-        $("button#login-btn").click(function () {
-            SendLogin();
-        });
     });
 
     function GetUserCart(userID) {
@@ -49,13 +46,47 @@
         });
     }
 
-    function DeleteItemCart(userID, productID) {
+    function AddQuantityItemCart(userID, productID, rowID) {
+        $.ajax({
+            url: "/food-api/API/cart/setAdd.php",
+            type: "POST",
+            data: JSON.stringify({
+                "user": userID,
+                "product": productID,
+            }),
+            success: function (result) {
+                var data = result;
+                console.log(data);
+            },
+            error: function (request, status, error) { }
+        });
+    }
+
+    function RemoveQuantityItemCart(userID, productID, rowID) {
+        $.ajax({
+            url: "/food-api/API/cart/setRemove.php",
+            type: "POST",
+            data: JSON.stringify({
+                "user": userID,
+                "prod": productID,
+            }),
+            success: function (result) {
+                var data = result;
+                console.log(data);
+            },
+            error: function (request, status, error) { }
+        });
+    }
+
+    function DeleteItemCart(userID, productID, rowID) {
         $.ajax({
             url: "/food-api/API/cart/deleteItem.php?user=" + userID + "&product=" + productID,
             type: "GET",
             success: function (result) {
                 var data = result;
                 console.log(data);
+
+                $("#" + rowID).remove();
             },
             error: function (request, status, error) { }
         });
@@ -72,30 +103,58 @@
             }, "myDiv");
 
             let sItem = new HItem("h5", {
-                class: 'col-4',
+                class: 'col-6',
                 text: items[i].name + " --> quantità: " + items[i].quantity
             }, rowID);
 
             let btnDiv = new HItem("div", {
-                class: 'col-6',
-                id: rowID + 'col',
+                class: 'col-4',
+                id: colID,
             }, rowID);
 
             let plusItem = new HItem("button", {
-                class: 'btn btn-primary',
+                class: 'btn btn-primary add',
+                productid: items[i].product,
+                row: rowID,
                 text: "+"
             }, colID);
 
             let minusItem = new HItem("button", {
-                class: 'btn btn-danger',
+                class: 'btn btn-danger remove',
+                productid: items[i].product,
+                row: rowID,
                 text: "-"
             }, colID);
 
             let deleteItem = new HItem("button", {
-                class: 'btn btn-info',
+                class: 'btn btn-info delete',
+                productid: items[i].product,
+                row: rowID,
                 text: "delete"
             }, colID);
         }
+
+        $(".add").click(function () {
+            console.log("clicked add");
+            let prodID = $(this).attr('productid');
+            let rowID = $(this).attr('row');
+
+            AddQuantityItemCart(cookieUserData["userID"], prodID, rowID);
+        });
+        $(".remove").click(function () {
+            console.log("clicked remove");
+            let prodID = $(this).attr('productid');
+            let rowID = $(this).attr('row');
+
+            RemoveQuantityItemCart(cookieUserData["userID"], prodID, rowID);
+        });
+        $(".delete").click(function (e) {
+            console.log("clicked delete");
+            let prodID = $(this).attr('productid');
+            let rowID = $(this).attr('row');
+
+            DeleteItemCart(cookieUserData["userID"], prodID, rowID);
+        });
     }
 </script>
 
