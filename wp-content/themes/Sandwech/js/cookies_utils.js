@@ -21,6 +21,13 @@ function CookiesToObject(cookies) {
     return result;
 }
 
+function DeleteCookie(cookieName, reload) {
+    document.cookie = cookieName + "=" + "; path=/; SameSite=None; Secure; expires=" + addDaysToDate(-1);
+
+    if (reload)
+        window.location.reload();
+}
+
 // Questa funzione crea un cookie in javascript.
 // Prende tre parametri:
 // 1. Il nome del cookie (cookieName)

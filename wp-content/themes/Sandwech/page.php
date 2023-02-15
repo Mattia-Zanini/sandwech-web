@@ -21,16 +21,31 @@ template personalizzato per mostrare la pagina.
 -->
 
 <?php
+$DEBUG = true;
+
 if (is_page('login-page')) {
     get_template_part('pages/page', 'login');
 }
-if (is_page('profile')) {
-    get_template_part('pages/page', 'profile');
-}
-if (is_page('cart')) {
-    get_template_part('pages/page', 'cart');
-}
-if (is_page('order')) {
-    get_template_part('pages/page', 'order');
+
+if ($DEBUG == false) {
+    if (is_page('profile')) {
+        get_template_part('pages/page', 'profile');
+    }
+    if (is_page('cart')) {
+        get_template_part('pages/page', 'cart');
+    }
+    if (is_page('order')) {
+        get_template_part('pages/page', 'order');
+    }
+} else {
+    if (is_page('profile')) {
+        get_template_part('pages/page', 'profile-test');
+    }
+    if (is_page('cart')) {
+        get_template_part('pages/page', 'cart-test');
+    }
+    if (is_page('order')) {
+        get_template_part('pages/page', 'order-test');
+    }
 }
 ?>

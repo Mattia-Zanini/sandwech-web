@@ -44,7 +44,7 @@ get_header();
         </div>
         <div class="col-1">
             <a href="#" class="noulink-black">
-                <h1 class="nav-menu">Ordina</h1>
+                <h1 class="nav-menu order-redirect">Ordina</h1>
             </a>
         </div>
         <div class="col-1 offset-6" style="background-color: #ffffff; border-radius: 50px; width: 10vw;">
@@ -68,8 +68,8 @@ get_header();
                 Siamo fieri di offrire una vasta selezione di panini deliziosi, realizzati con ingredienti freschi e di
                 alta qualità. Siamo convinti che ogni persona meriti un pasto delizioso e nutriente, per questo mettiamo
                 il massimo impegno nella preparazione dei nostri panini. Scegli il tuo preferito o provali tutti, siamo
-                certi che non te ne pentirai! Venite a trovarci e gustate la vera essenza del panino.</p>
-            <button class="btn btn-to-order btn-shadow">ORDINA ORA</button>
+                certi che non te ne pentirai.</p>
+            <button class="order-redirect btn btn-to-order btn-shadow">ORDINA ORA</button>
         </div>
     </div>
 </div>
@@ -82,6 +82,10 @@ get_header();
     });
     $("#cart-icon").click(function () {
         window.location.href = "http://localhost/sandwech-web/cart";
+    });
+
+    $(".order-redirect").click(function () {
+        window.location.href = "http://localhost/sandwech-web/order";
     });
 </script>
 
