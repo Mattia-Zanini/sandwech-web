@@ -2,7 +2,7 @@
 
 <link href="<?php echo get_template_directory_uri(); ?>/css/cart.css" rel="stylesheet" type="text/css">
 
-<div>
+<div class="container-fluid">
     <div class="row">
         <div class="col-3">
             <h1>Cart</h1>
@@ -35,9 +35,7 @@
         $.ajax({
             url: "/food-api/API/cart/getCart.php?user=" + userID,
             type: "GET",
-            success: function (result) {
-                //var data = result[0];
-                var data = result;
+            success: function (data) {
                 console.log(data);
 
                 RenderCartItems(data);
@@ -54,8 +52,7 @@
                 "user": userID,
                 "product": productID,
             }),
-            success: function (result) {
-                var data = result;
+            success: function (data) {
                 console.log(data);
             },
             error: function (request, status, error) { }
@@ -70,8 +67,7 @@
                 "user": userID,
                 "prod": productID,
             }),
-            success: function (result) {
-                var data = result;
+            success: function (data) {
                 console.log(data);
             },
             error: function (request, status, error) { }
@@ -82,8 +78,7 @@
         $.ajax({
             url: "/food-api/API/cart/deleteItem.php?user=" + userID + "&product=" + productID,
             type: "GET",
-            success: function (result) {
-                var data = result;
+            success: function (data) {
                 console.log(data);
 
                 $("#" + rowID).remove();

@@ -33,6 +33,6 @@ Text Domain: sandwech
     color: black;
 }
 
-/*body {
-    background-color: whitesmoke !important;
-}*/
+body {
+    background-color: #f1f6fa !important;
+}
