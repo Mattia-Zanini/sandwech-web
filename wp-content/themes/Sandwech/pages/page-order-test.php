@@ -19,63 +19,109 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/HItem.js"></script>
 <script text="text/javascript">
-$(document).ready(function() {
-    var cookieUserData = CookiesToObject(document.cookie)["userLoginData"];
-    console.log(cookieUserData);
-    GetArchieveTags();
-
-    /*
-    console.log(Math.floor(17 / 4));
-    console.log(Math.floor(4.9));
-    */
-});
-
-function GetArchieveTags() {
-    $.ajax({
-        url: "/food-api/API/tag/getArchiveTag.php",
-        type: "GET",
-        success: function(data) {
-            console.log(data);
-            RenderTagsItems(data);
-        },
-        error: function(request, status, error) {}
+    $(document).ready(function () {
+        var cookieUserData = CookiesToObject(document.cookie)["userLoginData"];
+        console.log(cookieUserData);
+        GetArchieveTags();
     });
-}
 
-function GetProductsByTag(tagName) {}
+    function GetArchieveTags() {
+        $.ajax({
+            url: "/food-api/API/tag/getArchiveTag.php",
+            type: "GET",
+            success: function (data) {
+                console.log(data);
+                RenderTagsItems(data);
+            },
+            error: function (request, status, error) { }
+        });
+    }
 
-function RenderTagsItems(tags) {
-    let tagsDiv = new HItem(
-        "div", {
+    function GetProductsByTag(tagID) {
+        $.ajax({
+            url: "/food-api/API/tag/product-tag/getActiveProductsByTag.php?tag_id=" + tagID,
+            type: "GET",
+            success: function (data) {
+                console.log(data);
+
+                RenderItems(data);
+            },
+            error: function (request, status, error) { }
+        });
+    }
+
+    function RenderTagsItems(tags) {
+        let tagsDiv = new HItem(
+            "div", {
             class: 'row',
             id: "myDivRow"
         },
-        "myDiv");
-
-    for (let i = 0; i < tags.length; i++) {
-        let colBtn = "col-" + i;
-
-        let tagBtnCol = new HItem(
+            "myDiv");
+        let productsDiv = new HItem(
             "div", {
+            class: 'row',
+            id: "myDivRowProd"
+        },
+            "myDiv");
+
+        for (let i = 0; i < tags.length; i++) {
+            let colBtn = "col-" + i;
+
+            let tagBtnCol = new HItem(
+                "div", {
                 class: 'col-2',
                 id: colBtn
             },
-            "myDivRow");
+                "myDivRow");
 
-        let tagBtn = new HItem(
-            "div", {
+            let tagBtn = new HItem(
+                "div", {
                 class: 'btn btn-primary btn-tag',
                 id: tags[i].id,
                 text: tags[i].name
             },
-            colBtn);
+                colBtn);
+        }
+
+        $(".btn-tag").click(function () {
+            //console.log("clicked " + $(this).attr('id'));
+            console.log("clicked " + $(this).text());
+
+            $('.product-box').remove(); //toglie le box degli eventuali prodotti già in visualizzazione
+
+            GetProductsByTag($(this).attr('id'));
+        });
     }
 
-    $(".btn-tag").click(function() {
-        //console.log("clicked " + $(this).attr('id'));
-        console.log("clicked " + $(this).text());
-    });
-}
+    function RenderItems(items) {
+        //non serve, basta usare il col-4 di bootstrap per dividerli equamente nelle varie righe
+        for (let i = 0; i < items.length; i++) {
+            let tagsDiv = new HItem(
+                "div", {
+                class: "col-3 product-box",
+                style: "margin-top: 2vw;",
+                id: "item-id-" + items[i].id,
+                tag: items[i].tag,
+                productID: items[i].id
+            },
+                "myDivRowProd");
+
+            let item = new HItem(
+                "div", {
+                style: "background-color: #5985a9; width: 90%; height: 100px;",
+                text: items[i].name + "; prezzo: " + items[i].price + "€",
+            },
+                "item-id-" + items[i].id);
+        }
+
+        //console.log("Created items");
+
+        $(".product-box").click(function () {
+            //console.log("clicked box with productID: " + $(this).attr('productID'));
+
+            window.location.href = 'http://localhost/sandwech-web/product?productID=' + $(this).attr('productID');
+        });
+    }
 </script>
 
 <?php get_footer(); ?>
