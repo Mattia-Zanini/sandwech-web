@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Really Simple SSL - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-09 08:47:19+0000\n"
+"PO-Revision-Date: 2023-02-17 21:06:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.3\n"
 "Language: it\n"
 "Project-Id-Version: Plugins - Really Simple SSL - Stable (latest release)\n"
+
+#: mailer/class-mail.php:53
+msgid "An error occurred:"
+msgstr "Si è verificato un errore:"
+
+#: mailer/class-mail.php:51
+msgid "Email could not be sent."
+msgstr "Impossibile inviare l’email."
 
 #: settings/config/config.php:102
 msgid "Recommended Security Headers"
@@ -23,6 +31,10 @@ msgstr "Termini e Condizioni."
 #: settings/src/Settings/Support.js:72
 msgid "Send"
 msgstr "Invia"
+
+#: settings/config/config.php:745
+msgid "disabled"
+msgstr "disattivato"
 
 #: onboarding/config.php:77 settings/settings.php:427
 msgid "Complianz - Cookie Consent Management as it should be"
@@ -1095,7 +1107,7 @@ msgstr "Disabilita OCSP Stapling"
 
 #: lets-encrypt/config/fields.php:119
 msgid "OCSP stapling is configured as enabled by default. You can disable this option if this is not supported by your hosting provider."
-msgstr "L'OCSP stapling è configurato come abilitato per impostazione predefinita. È possibile disabilitare questa opzione se non è supportata dal proprio fornitore di hosting."
+msgstr "OCSP stapling dovrebbe essere abilitato in modo predefinito. Puoi disabilitarlo se il tuo fornitore non lo supporta."
 
 #: lets-encrypt/functions.php:12
 msgid "For more information, please read this %sarticle%s"
@@ -1131,7 +1143,7 @@ msgstr "Abbiamo rilevato il plugin %s sul tuo sito web."
 
 #: onboarding/config.php:181
 msgid "Please refresh the SSL status if a certificate has been installed recently."
-msgstr "Aggiorna lo stato SSL se un certificato è stato installato di recente."
+msgstr "%sAggiorna il rilevamento%s se un certificato è stato installato di recente."
 
 #: onboarding/config.php:181
 msgid "No SSL certificate has been detected."
@@ -1246,7 +1258,7 @@ msgstr "Cartelle"
 
 #: settings/config/config.php:220
 msgid "Below you will find the instructions for different hosting environments and configurations. If you start the process with the necessary instructions and credentials the next view steps will be done in no time."
-msgstr "Di seguito troverai le istruzioni per diversi ambienti di hosting e configurazioni. Se inizi il processo con le istruzioni e le credenziali necessarie, le fasi di visualizzazione successive saranno eseguite in un attimo."
+msgstr "Di seguito troverai le istruzioni per diversi ambienti di hosting e configurazioni. Se inizi la procedura con le istruzioni e le credenziali necessarie, i prossimi brevi passi saranno fatti in pochissimo tempo."
 
 #: settings/config/config.php:219
 msgid "Hosting"
@@ -1258,7 +1270,7 @@ msgstr "Letʼs Encrypt è un'autorità di certificazione gratuita, automatica e 
 
 #: settings/config/config.php:200
 msgid " Please note that you can always save and finish the wizard later, use our %sdocumentation%s for additional information or log a %ssupport ticket%s if you need our assistance."
-msgstr "Nota che è sempre possibile salvare e finire la procedura guidata più tardi, utilizzare la nostra %sdocumentazione%s per ulteriori informazioni o registrare un %ssupport ticket%s se hai bisogno della nostra assistenza."
+msgstr "Nota che è sempre possibile salvare e finire la procedura guidata più tardi, utilizzare la nostra %sdocumentaruib%s per ulteriori informazioni o registrare un %ssupport ticket%s se hai bisogno della nostra assistenza."
 
 #: settings/config/config.php:198
 msgid "We have tried to make our Wizard as simple and fast as possible. Although these questions are all necessary, if there’s any way you think we can improve the plugin, please let us %sknow%s!"
@@ -1390,7 +1402,7 @@ msgstr "Dominio"
 
 #: settings/settings.php:434
 msgid "Terms and Conditions"
-msgstr "Temini e Condizioni"
+msgstr "Termini e Condizioni"
 
 #: lets-encrypt/config/fields.php:91 lets-encrypt/config/fields.php:94
 #: settings/config/config.php:375
@@ -1399,7 +1411,7 @@ msgstr "Indirizzo email"
 
 #: lets-encrypt/config/fields.php:95
 msgid "This email address is used to create a Let's Encrypt account. This is also where you will receive renewal notifications."
-msgstr "Questo indirizzo e-mail viene utilizzato per creare un account Let's Encrypt. È anche il luogo in cui riceverai le notifiche di rinnovo."
+msgstr "L'indirizzo email verrà utilizzato per creare un account Let's Encrypt. Qui è dove riceverai anche le notifiche di rinnovo."
 
 #: lets-encrypt/config/class-hosts.php:534
 msgid "I don't know, or not listed, proceed with installation"
@@ -2050,7 +2062,7 @@ msgstr "Il tuo sito usa Elementor. Questo può richiedere alcuni passaggi addizi
 
 #: class-admin.php:2114
 msgid "The .htaccess redirect rules selected by this plugin failed in the test. Set manually or dismiss to leave on PHP redirect."
-msgstr "Le regole di reindirizzamento .htaccess selezionate da questo plugin hanno fallito il test. Imposta manualmente o elimina per restare su reindirizzamento PHP."
+msgstr "Le regole di reindirizzamento .htaccess selezionate da questo plugin non sono riuscite nel test. Imposta manualmente o disattiva per lasciare su reindirizzamento WordPress."
 
 #: class-admin.php:2100
 msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
@@ -2082,7 +2094,7 @@ msgstr "Generale"
 
 #: onboarding/config.php:30
 msgid "Before you migrate, please check for:"
-msgstr "Prima della migrazione, verifica che:"
+msgstr "Prima di migrare, controlla:"
 
 #: rlrsssl-really-simple-ssl.php:41
 msgid "Really Simple SSL cannot be activated. The plugin requires WordPress 5.7 or higher"
@@ -2090,7 +2102,7 @@ msgstr "Really Simple SSL non può essere attivato. Il plugin richiede WordPress
 
 #: rlrsssl-really-simple-ssl.php:35
 msgid "Really Simple SSL cannot be activated. The plugin requires PHP 7.2 or higher"
-msgstr "Really Simple SSL non può essere attivato. Il plugin richiede PHP 7.2 o superiore"
+msgstr "Really Simple SSL non può essere attivato. Il plugin richiede PHP 5.6 o superiore."
 
 #: class-admin.php:2715 class-multisite.php:219 settings/build/index.js:382
 #: settings/src/Header.js:48
@@ -2172,7 +2184,7 @@ msgstr "Reindirizzamento 301 a SSL abilitato"
 #: class-admin.php:501 settings/build/index.js:382
 #: settings/src/Onboarding/Onboarding.js:275
 msgid "Dismiss"
-msgstr "Rifiuta"
+msgstr "ignora"
 
 #: onboarding/config.php:98
 msgid "Enable"
@@ -2253,7 +2265,7 @@ msgstr "Maggiori informazioni"
 
 #: settings/config/config.php:338
 msgid "If this option is set to true, the mixed content fixer will fire on the init hook instead of the template_redirect hook. Only use this option when you experience problems with the mixed content fixer."
-msgstr "Se questa opzione è impostata su vero, il correttore di contenuto misto si attiverà sull'hook init invece che sull'hook template_redirect. Utilizzare questa opzione solo se si riscontrano problemi con il correttore di contenuto misto."
+msgstr "Se questa opzione è impostata su vero, il fixer del contenuto misto agirà sull'hook di inizializzazione invece che sull'hook template_redirect. Usa questa opzione solo se hai problemi con il fixer di contenuto misto."
 
 #: onboarding/config.php:23
 msgid "You can also let the automatic scan of the pro version handle this for you, and get premium support, increased security with HSTS and more!"
@@ -2273,11 +2285,11 @@ msgstr "Non è stato abilitato nessun reindirizzamento 301. Abilita il reindiriz
 
 #: class-admin.php:2107
 msgid "Enable a .htaccess redirect or PHP redirect in the settings to create a 301 redirect."
-msgstr "Abilitare un reindirizzamento .htaccess o un reindirizzamento PHP nelle impostazioni per creare un reindirizzamento 301."
+msgstr "Abilita un reindirizzamento .htaccess o il reindirizzamento WordPress nelle impostazioni per creare un reindirizzamento 301."
 
 #: class-admin.php:2112
 msgid ".htaccess redirect."
-msgstr "reindirizzamento .htaccess."
+msgstr "Reindirizzamento .htaccess"
 
 #: class-admin.php:2076
 msgid "301 redirect to https set."
@@ -2307,11 +2319,11 @@ msgstr "Il tuo file wp-config.php deve essere modificato, ma non è scrivibile."
 
 #: class-admin.php:1878 class-admin.php:1899
 msgid "Set your wp-config.php to writable and reload this page."
-msgstr "Impostare il file wp-config.php come scrivibile e ricaricare questa pagina."
+msgstr "Imposta come %sscrivibile%s i permessi del tuo file wp-config.php e ricarica questa pagina."
 
 #: class-admin.php:1899
 msgid "A definition of a site url or home url was detected in your wp-config.php, but the file is not writable."
-msgstr "Rilevata la definizione di un url sito o di un url home nel file wp-config.php, ma il file non è scrivibile."
+msgstr "Una definizione di un SITEURL o HOME_URL è stato rilevata nel file wp-config.php, ma il file non è scrivibile."
 
 #: onboarding/config.php:160
 msgid "Images, stylesheets or scripts from a domain without an SSL certificate: remove them or move to your own server."
