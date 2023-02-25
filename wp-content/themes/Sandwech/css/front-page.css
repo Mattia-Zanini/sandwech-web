@@ -44,29 +44,6 @@ body {
     color: white;
 }
 
-.nav-menu {
-    font-size: 1.5vw;
-    font-family: 'Varela Round', sans-serif;
-    line-height: 7vh;
-    font-weight: 600;
-}
-
-.icon-circle {
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50px;
-    background-color: #f5a639;
-    margin-top: 0.4vw;
-}
-
-.icon-circle:hover {
-    background-color: #d17f0b;
-}
-
 .btn-shadow {
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-}
-
-.current-page {
-    color: #f5a639;
 }

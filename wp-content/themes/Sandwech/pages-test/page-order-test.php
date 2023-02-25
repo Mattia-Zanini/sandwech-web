@@ -3,7 +3,7 @@
 <link href="<?php echo get_template_directory_uri(); ?>/css/cart.css" rel="stylesheet" type="text/css">
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row" style="margin-top: 2vh;">
         <div class="col-2">
             <h1>Order</h1>
             <button class="btn btn-primary"
@@ -18,6 +18,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies_utils.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/HItem.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/navutils.js"></script>
 <script text="text/javascript">
     $(document).ready(function () {
         var cookieUserData = CookiesToObject(document.cookie)["userLoginData"];

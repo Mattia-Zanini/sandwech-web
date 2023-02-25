@@ -21,7 +21,7 @@ template personalizzato per mostrare la pagina.
 -->
 
 <?php
-$DEBUG = true;
+$DEBUG = false;
 
 if (is_page('login-page')) {
     get_template_part('pages/page', 'login');
@@ -37,18 +37,21 @@ if ($DEBUG == false) {
     if (is_page('order')) {
         get_template_part('pages/page', 'order');
     }
+    if (is_page('product')) {
+        get_template_part('pages/page', 'single_product');
+    }
 } else {
     if (is_page('profile')) {
-        get_template_part('pages/page', 'profile-test');
+        get_template_part('pages-test/page', 'profile-test');
     }
     if (is_page('cart')) {
-        get_template_part('pages/page', 'cart-test');
+        get_template_part('pages-test/page', 'cart-test');
     }
     if (is_page('order')) {
-        get_template_part('pages/page', 'order-test');
+        get_template_part('pages-test/page', 'order-test');
     }
     if (is_page('product')) {
-        get_template_part('pages/page', 'single_product-test');
+        get_template_part('pages-test/page', 'single_product-test');
     }
 }
 ?>

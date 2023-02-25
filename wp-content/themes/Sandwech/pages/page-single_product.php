@@ -3,6 +3,7 @@
 <link href="<?php echo get_template_directory_uri(); ?>/css/single-product.css" rel="stylesheet" type="text/css">
 
 <div class="container-fluid">
+    <?php require_once("navbar.php"); ?>
     <div class="row">
         <div class="col-2">
             <h1>Prodotto Singolo</h1>
@@ -13,7 +14,7 @@
             <div id="myDiv">
                 <div class="row">
                     <div class="col-7">
-                        <img class="img-fluid"
+                        <img class="img-fluid" style="border-radius: 20px;"
                             src="<?php echo get_template_directory_uri(); ?>/assets/img/panini_farciti.jpg">
                     </div>
                     <div class="col-5">
@@ -22,8 +23,8 @@
                         <h4 id="prod-description"></h4>
                         <div class="row">
                             <button class="col-1 btn btn-primary minus">-</button>
-                            <input type="number" value="1" class="col-2" id="prod-quantity" style="text-align: center;"
-                                min="1" max="99">
+                            <input type="number" value="1" class="col-2" id="prod-quantity"
+                                style="text-align: center; width: 50px;" min="1" max="99">
                             <button class="col-1 btn btn-primary plus">+</button>
                             <button class="col-2 offset-1 btn btn-danger cart">Cart</button>
                         </div>
@@ -36,6 +37,7 @@
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies_utils.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/cookies.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/navutils.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/HItem.js"></script>
 <script text="text/javascript">
     $(document).ready(function () {
