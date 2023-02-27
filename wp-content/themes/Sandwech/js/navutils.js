@@ -4,8 +4,8 @@ $("#user-icon").click(function () {
 $("#cart-icon").click(function () {
     window.location.href = "http://localhost/sandwech-web/cart";
 });
-$(".order-redirect").click(function () {
-    window.location.href = "http://localhost/sandwech-web/order";
+$(".catalog-redirect").click(function () {
+    window.location.href = "http://localhost/sandwech-web/catalog";
 });
 $(".home-redirect").click(function () {
     window.location.href = "http://localhost/sandwech-web";

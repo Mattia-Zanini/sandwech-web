@@ -10,7 +10,7 @@
     </div>
     <div class="col-1">
         <a href="#" class="noulink-black">
-            <h1 class="nav-menu order-redirect">Ordina</h1>
+            <h1 class="nav-menu catalog-redirect">Catalogo</h1>
         </a>
     </div>
     <div class="col-1 offset-6" style="background-color: #ffffff; border-radius: 50px; width: 10vw;">

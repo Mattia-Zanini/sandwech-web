@@ -10,6 +10,14 @@ class HItem {
         //console.log("created");
     }
 
-    Append(selector, item) { }
-    AppendArray(selector, arrItem) { }
+    static Append(selector, item) {
+        $('<' + item.type + '>', item.options).appendTo("#" + selector);
+    }
+    static AppendArray(selector, arrItem) {
+        //console.log("Appending with this selector: " + selector);
+
+        for (let index = 0; index < arrItem.length; index++) {
+            $('<' + arrItem[index][0] + '>', arrItem[index][1]).appendTo("#" + selector);
+        }
+    }
 }

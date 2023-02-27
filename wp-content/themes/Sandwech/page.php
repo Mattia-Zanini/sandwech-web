@@ -37,6 +37,9 @@ if ($DEBUG == false) {
     if (is_page('order')) {
         get_template_part('pages/page', 'order');
     }
+    if (is_page('catalog')) {
+        get_template_part('pages/page', 'catalog');
+    }
     if (is_page('product')) {
         get_template_part('pages/page', 'single_product');
     }

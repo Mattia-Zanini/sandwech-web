@@ -5,7 +5,14 @@
 <div class="container-fluid">
     <?php require_once("navbar.php"); ?>
     <div class="row">
-        <div id="myDiv"></div>
+        <div class="col-8">
+            <div id="myDiv"></div>
+        </div>
+        <div class="col-4" style="text-align: center;">
+            <h1>Totale</h1>
+            <h4 id="total-price">0,00€</h4>
+            <button class="btn btn-warning btn-buyall">Acquista Ora</button>
+        </div>
     </div>
 </div>
 
@@ -15,25 +22,35 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/HItem.js"></script>
 <script text="text/javascript">
     var cookieUserData = null;
+    var products = null;
+
     $(document).ready(function () {
+        $(".btn-buyall").click(function () {
+            console.log("Clicked btn-buyall");
+            if (products != null) {
+                window.location.href = "http://localhost/sandwech-web/order";
+            }
+        });
+
         cookieUserData = CookiesToObject(document.cookie)["userLoginData"];
         console.log(cookieUserData);
-        GetUserCart(cookieUserData["userID"]);
-
-        /*
-        console.log(Math.floor(17 / 4));
-        console.log(Math.floor(4.9));
-        */
+        GetUserCart(cookieUserData["userID"], false);
     });
 
-    function GetUserCart(userID) {
+    function GetUserCart(userID, renderOnlyTotal) {
         $.ajax({
             url: "/food-api/API/cart/getCart.php?user=" + userID,
             type: "GET",
             success: function (data) {
                 console.log(data);
+                products = data;
 
-                RenderCartItems(data);
+                if (renderOnlyTotal == false) {
+                    RenderCartItems(data);
+                    RenderTotalPrice(data);
+                } else {
+                    RenderTotalPrice(data);
+                }
             },
             error: function (request, status, error) { }
         });
@@ -49,6 +66,7 @@
             }),
             success: function (data) {
                 console.log(data);
+                GetUserCart(userID, true);
             },
             error: function (request, status, error) { }
         });
@@ -64,6 +82,7 @@
             }),
             success: function (data) {
                 console.log(data);
+                GetUserCart(userID, true);
             },
             error: function (request, status, error) { }
         });
@@ -77,6 +96,7 @@
                 console.log(data);
 
                 $("#" + rowID).remove();
+                GetUserCart(userID, true);
             },
             error: function (request, status, error) { }
         });
@@ -92,42 +112,44 @@
                 id: rowID,
             }, "myDiv");
 
-            let sItem = new HItem("h5", {
-                class: 'col-4',
-                text: items[i].name + " --> quantità: "
-            }, rowID);
+            let itemInfo = [
+                ["h5", {
+                    class: 'col-4',
+                    text: items[i].name + " --> quantità: "
+                }],
+                ["h5", {
+                    class: 'col-1',
+                    id: "quantityValue-" + items[i].product,
+                    text: items[i].quantity
+                }],
+                ["div", {
+                    class: 'col-4',
+                    id: colID,
+                }]
+            ];
+            HItem.AppendArray(rowID, itemInfo);
 
-            let sItemQuant = new HItem("h5", {
-                class: 'col-1',
-                id: "quantityValue",
-                text: items[i].quantity
-            }, rowID);
-
-            let btnDiv = new HItem("div", {
-                class: 'col-4',
-                id: colID,
-            }, rowID);
-
-            let plusItem = new HItem("button", {
-                class: 'btn btn-primary add',
-                productid: items[i].product,
-                row: rowID,
-                text: "+"
-            }, colID);
-
-            let minusItem = new HItem("button", {
-                class: 'btn btn-danger remove',
-                productid: items[i].product,
-                row: rowID,
-                text: "-"
-            }, colID);
-
-            let deleteItem = new HItem("button", {
-                class: 'btn btn-info delete',
-                productid: items[i].product,
-                row: rowID,
-                text: "delete"
-            }, colID);
+            let buttons = [
+                ["button", {
+                    class: 'btn btn-primary add',
+                    productid: items[i].product,
+                    row: rowID,
+                    text: "+"
+                }],
+                ["button", {
+                    class: 'btn btn-danger remove',
+                    productid: items[i].product,
+                    row: rowID,
+                    text: "-"
+                }],
+                ["button", {
+                    class: 'btn btn-info delete',
+                    productid: items[i].product,
+                    row: rowID,
+                    text: "delete"
+                }]
+            ];
+            HItem.AppendArray(colID, buttons);
         }
 
         $(".add").click(function () {
@@ -135,12 +157,11 @@
             let prodID = $(this).attr('productid');
             let rowID = $(this).attr('row');
 
-            AddQuantityItemCart(cookieUserData["userID"], prodID, rowID);
-
-            let quant = $("#quantityValue").text();
+            let quant = $("#quantityValue-" + prodID).text();
             if (quant < 99) {
                 quant++;
-                $("#quantityValue").text(quant);
+                $("#quantityValue-" + prodID).text(quant);
+                AddQuantityItemCart(cookieUserData["userID"], prodID, rowID);
             }
         });
         $(".remove").click(function () {
@@ -148,10 +169,10 @@
             let prodID = $(this).attr('productid');
             let rowID = $(this).attr('row');
 
-            let quant = $("#quantityValue").text();
+            let quant = $("#quantityValue-" + prodID).text();
             if (quant > 1) {
                 quant--;
-                $("#quantityValue").text(quant);
+                $("#quantityValue-" + prodID).text(quant);
                 RemoveQuantityItemCart(cookieUserData["userID"], prodID, rowID);
             }
         });
@@ -162,6 +183,18 @@
 
             DeleteItemCart(cookieUserData["userID"], prodID, rowID);
         });
+    }
+
+    function RenderTotalPrice(data) {
+        let total = 0.00;
+        for (let i = 0; i < data.length; i++) {
+            let singleItemTotal = data[i].quantity * data[i].price;
+            total += singleItemTotal;
+        }
+
+        totalString = parseFloat(total).toFixed(2).replace(".", ",");
+        //console.log(totalString);
+        $("#total-price").text(totalString + "€");
     }
 </script>
 

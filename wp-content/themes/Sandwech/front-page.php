@@ -42,7 +42,7 @@ get_header();
                 alta qualità. Siamo convinti che ogni persona meriti un pasto delizioso e nutriente, per questo mettiamo
                 il massimo impegno nella preparazione dei nostri panini. Scegli il tuo preferito o provali tutti, siamo
                 certi che non te ne pentirai.</p>
-            <button class="order-redirect btn btn-to-order btn-shadow">ORDINA ORA</button>
+            <button class="catalog-redirect btn btn-to-catalog btn-shadow">ORDINA ORA</button>
         </div>
     </div>
 </div>
