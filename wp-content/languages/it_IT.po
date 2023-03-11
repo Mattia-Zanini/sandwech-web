@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-12-23 17:14:53+0000\n"
+"PO-Revision-Date: 2023-03-03 12:44:38+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: it\n"
 "Project-Id-Version: WordPress - 6.1.x - Development\n"
 
@@ -4191,7 +4191,7 @@ msgid "[%s] New Site Created"
 msgstr "[%s] Nuovo sito creato"
 
 #. translators: %s: PHP function name.
-#: wp-includes/class-wp-image-editor-imagick.php:824
+#: wp-includes/class-wp-image-editor-imagick.php:778
 msgid "%s failed while writing image to stream."
 msgstr "La funzione %s non è riuscita a scrivere l'immagine nello streaming."
 
@@ -4913,10 +4913,10 @@ msgstr "La parola chiave dello schema \"tipo\" per %1$s può contenere solamente
 #: wp-includes/block-template-utils.php:677
 #: wp-includes/block-template-utils.php:799 wp-includes/rest-api.php:708
 #: wp-includes/js/dist/edit-site.js:14506
-#: wp-admin/includes/class-wp-debug-data.php:1104
-#: wp-admin/includes/class-wp-debug-data.php:1123
-#: wp-admin/includes/class-wp-debug-data.php:1218
-#: wp-admin/includes/class-wp-debug-data.php:1379
+#: wp-admin/includes/class-wp-debug-data.php:1102
+#: wp-admin/includes/class-wp-debug-data.php:1121
+#: wp-admin/includes/class-wp-debug-data.php:1216
+#: wp-admin/includes/class-wp-debug-data.php:1377
 msgid "%1$s (%2$s)"
 msgstr "%1$s (%2$s)"
 
@@ -5023,7 +5023,7 @@ msgstr "Limita i risultati ai plugin con il seguente stato."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:968
 msgid "The plugin's text domain."
-msgstr "Il testo del dominio del plugin."
+msgstr "Il text domain del plugin."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php:962
 msgid "Minimum required version of PHP."
@@ -5891,7 +5891,7 @@ msgstr "Si è verificato un errore critico sul tuo sito web. Controlla la casell
 msgid "There has been a critical error on this website, putting it in recovery mode. Please check the Themes and Plugins screens for more details. If you just installed or updated a theme or plugin, check the relevant page for that first."
 msgstr "Si è verificato un errore critico sul tuo sito web, che lo ha fatto entrare in modalità di recupero. Trovi più dettagli nelle schermate dei temi e dei plugin. Se hai appena installato o aggiornato un tema oppure un plugin, controlla per prima la schermata che lo riguarda."
 
-#: wp-includes/class-wp-image-editor-imagick.php:702
+#: wp-includes/class-wp-image-editor-imagick.php:656
 msgid "The image cannot be rotated because the embedded meta data cannot be updated."
 msgstr "Questa immagine non può essere ruotata perché i metadati incorporati non possono essere aggiornati."
 
@@ -6073,7 +6073,7 @@ msgid "20"
 msgstr "20"
 
 #: wp-includes/class-wp-image-editor-gd.php:277
-#: wp-includes/class-wp-image-editor-imagick.php:532
+#: wp-includes/class-wp-image-editor-imagick.php:488
 msgid "Cannot resize the image. Both width and height are not set."
 msgstr "Impossibile ridimensionare l'immagine. Non sono impostate né la larghezza né l'altezza."
 
@@ -6649,7 +6649,7 @@ msgstr "Se la tassonomia è interrogabile pubblicamente."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php:401
 msgid "Whether a taxonomy is intended for use publicly either via the admin interface or by front-end users."
-msgstr "Se una tassonomia è intesa ad uso pubblico sia tramite l'interfaccia di amministrazione che dagli utenti di front-end."
+msgstr "Se una tassonomia è intesa ad uso pubblico sia tramite l'interfaccia di amministrazione che dagli utenti di frontend."
 
 #: wp-includes/user.php:2847 wp-includes/user.php:3053
 #: wp-includes/user.php:3107
@@ -7434,7 +7434,7 @@ msgstr "Aggiornare comunque, anche se potrebbe bloccare il tuo sito?"
 
 #: wp-includes/class-wpdb.php:1495
 msgid "The query only expected one placeholder, but an array of multiple placeholders was sent."
-msgstr "La query si aspetta un placeholder, ma è stato passato un array di placeholder."
+msgstr "La query si aspetta un solo segnaposto, ma è stato inviato un array di segnaposti."
 
 #: wp-includes/script-loader.php:1233
 msgctxt "customizer changeset status"
@@ -8323,7 +8323,7 @@ msgstr "Per gli utenti con screen reader: quando in modalità modulo, potrebbe e
 #: wp-includes/widgets/class-wp-widget-custom-html.php:326
 #: wp-admin/plugin-editor.php:133 wp-admin/theme-editor.php:36
 msgid "To move away from this area, press the Esc key followed by the Tab key."
-msgstr "Per uscire da questa area, premere il tasto Esc seguito dal tasto Tab."
+msgstr "Per uscire da questa area, premi il tasto Esc seguito dal tasto Tab."
 
 #: wp-includes/class-wp-customize-manager.php:5686
 #: wp-includes/widgets/class-wp-widget-custom-html.php:325
@@ -8361,7 +8361,7 @@ msgstr "L'icona del sito dovrebbe essere quadrata e con una dimensione di almeno
 
 #: wp-includes/class-wp-customize-manager.php:5179
 msgid "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
-msgstr "Le icone del sito sono quelle che vedete nelle schede del browser, nella barra dei preferiti, e all'interno delle app mobile di WordPress, Caricane una qui!"
+msgstr "Le icone del sito sono quelle che si vedono nelle schede del browser, nella barra dei segnalibri e all'interno delle app mobile di WordPress. Caricane una qui!"
 
 #: wp-includes/class-wp-customize-manager.php:5075
 msgid "WordPress.org themes"
@@ -8429,7 +8429,7 @@ msgstr "Inserisci una data futura per poter programmare."
 
 #: wp-includes/class-wp-customize-manager.php:2652
 msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
-msgstr "Le modifiche precedenti sono state pubblicate. Prova a salvare ancore le modifiche attuali."
+msgstr "Le modifiche precedenti sono state pubblicate. Prova a salvare di nuovo le modifiche attuali."
 
 #: wp-includes/admin-bar.php:874
 msgid "Edit User"
@@ -10041,7 +10041,7 @@ msgstr "Se gli articoli con questo status debbano essere richiedibili pubblicame
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:323
 msgid "Whether posts of this status should be shown in the front end of the site."
-msgstr "Se gli articoli con questo status debbano essere mostrati nel front end del sito oppure no."
+msgstr "Se gli articoli con questo stato debbano essere mostrati nel frontend del sito oppure no."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php:317
 msgid "Whether posts with this status should be protected."
@@ -11026,8 +11026,8 @@ msgid "Link selected."
 msgstr "Link selezionato."
 
 #. translators: %s: ImageMagick method name.
-#: wp-includes/class-wp-image-editor-imagick.php:896
-#: wp-includes/class-wp-image-editor-imagick.php:907
+#: wp-includes/class-wp-image-editor-imagick.php:850
+#: wp-includes/class-wp-image-editor-imagick.php:861
 msgid "%s is required to strip image meta."
 msgstr "È richiesto %s per poter eliminare i meta dell'immagine."
 
@@ -11064,7 +11064,7 @@ msgstr "Rimuovere manualmente %1$s causerà dei warning PHP . Utilizza in altern
 
 #: wp-includes/class-wp-editor.php:1417
 msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
-msgstr "Il prossimo gruppo di scorciatoie di formattazione vengono applicate quando digiti o inserisci attorno ad un testo normale nel medesimo paragrafo. Per annullare premere Esc o il pulsante Annulla."
+msgstr "Il prossimo gruppo di scorciatoie di formattazione vengono applicate quando digiti o inserisci attorno ad un testo normale nel medesimo paragrafo. Per annullare premi Esc o il pulsante Annulla."
 
 #: wp-login.php:1347
 msgid "Your session has expired. Please log in to continue where you left off."
@@ -12218,7 +12218,7 @@ msgstr "Rimuovi traccia video"
 
 #: wp-includes/media-template.php:1394
 msgid "Remove poster image"
-msgstr "Elimina immagine poster"
+msgstr "Rimuovi immagine di copertina"
 
 #: wp-includes/media-template.php:1357 wp-includes/media-template.php:1371
 msgid "Remove video source"
@@ -12764,7 +12764,7 @@ msgstr "Widget spostato in su"
 
 #: wp-includes/class-wp-editor.php:1411
 msgid "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
-msgstr "Per spostare il focus su altri pulsanti usare Tab o i tasti cursore. Per ripristinare il focus sull'editor premere Esc oppure premere uno dei pulsanti."
+msgstr "Per spostare il focus su altri pulsanti usa Tab o i tasti cursore. Per ripristinare il focus sull'editor premi Esc oppure premi uno dei pulsanti."
 
 #: wp-includes/class-wp-editor.php:1402
 msgid "Elements path"
@@ -16208,7 +16208,7 @@ msgid "A valid URL was not provided."
 msgstr "Non è stato fornito un URL valido."
 
 #: wp-includes/class-wp-image-editor-gd.php:200
-#: wp-includes/class-wp-image-editor-imagick.php:319
+#: wp-includes/class-wp-image-editor-imagick.php:277
 msgid "Could not calculate resized image dimensions"
 msgstr "Impossibile calcolare la dimensioni dell'immagine ridimensionata"
 
@@ -17790,7 +17790,7 @@ msgid "Empty filename"
 msgstr "Nome file vuoto"
 
 #. translators: %s: Directory path.
-#: wp-includes/class-wp-image-editor-imagick.php:840
+#: wp-includes/class-wp-image-editor-imagick.php:794
 #: wp-includes/functions.php:2377 wp-includes/functions.php:2912
 msgid "Unable to create directory %s. Is its parent directory writable by the server?"
 msgstr "Impossibile creare la directory %s. Verifica che la directory madre sia scrivibile dal server!"
@@ -18394,9 +18394,9 @@ msgstr "Siti"
 #: wp-admin/includes/class-wp-debug-data.php:108
 #: wp-admin/includes/class-wp-debug-data.php:113
 #: wp-admin/includes/class-wp-debug-data.php:118
-#: wp-admin/includes/class-wp-debug-data.php:795
-#: wp-admin/includes/class-wp-debug-data.php:804
-#: wp-admin/includes/class-wp-debug-data.php:813
+#: wp-admin/includes/class-wp-debug-data.php:793
+#: wp-admin/includes/class-wp-debug-data.php:802
+#: wp-admin/includes/class-wp-debug-data.php:811
 #: wp-admin/includes/class-wp-links-list-table.php:264
 msgid "Yes"
 msgstr "Sì"
@@ -18602,9 +18602,9 @@ msgstr "Immagini"
 #. translators: %s: Theme author.
 #. translators: %s: Theme author link.
 #: wp-includes/js/dist/block-directory.js:1927
-#: wp-admin/includes/class-wp-debug-data.php:944
-#: wp-admin/includes/class-wp-debug-data.php:991
-#: wp-admin/includes/class-wp-debug-data.php:1314
+#: wp-admin/includes/class-wp-debug-data.php:942
+#: wp-admin/includes/class-wp-debug-data.php:989
+#: wp-admin/includes/class-wp-debug-data.php:1312
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:537
 #: wp-admin/includes/class-wp-plugins-list-table.php:1060
 #: wp-admin/includes/class-wp-theme-install-list-table.php:370
@@ -18621,8 +18621,8 @@ msgstr "Di: %s"
 #: wp-admin/includes/class-plugin-installer-skin.php:217
 #: wp-admin/includes/class-theme-installer-skin.php:240
 #: wp-admin/includes/class-wp-debug-data.php:70
-#: wp-admin/includes/class-wp-debug-data.php:1129
-#: wp-admin/includes/class-wp-debug-data.php:1224
+#: wp-admin/includes/class-wp-debug-data.php:1127
+#: wp-admin/includes/class-wp-debug-data.php:1222
 msgid "Version"
 msgstr "Versione"
 
@@ -19061,7 +19061,7 @@ msgstr "Modifica tag"
 #: wp-includes/script-loader.php:1043 wp-includes/js/dist/block-editor.js:38259
 #: wp-includes/js/dist/block-editor.js:38476
 #: wp-includes/js/dist/block-library.js:19259 wp-admin/edit-tag-form.php:186
-#: wp-admin/edit-tags.php:473 wp-admin/includes/class-wp-debug-data.php:1114
+#: wp-admin/edit-tags.php:473 wp-admin/includes/class-wp-debug-data.php:1112
 #: wp-admin/includes/media.php:1148 wp-admin/includes/media.php:1276
 #: wp-admin/includes/media.php:2962 wp-admin/includes/media.php:2978
 msgid "None"
@@ -19090,8 +19090,8 @@ msgstr "Descrizione"
 #: wp-includes/js/dist/edit-site.js:15536
 #: wp-includes/js/dist/reusable-blocks.js:356 wp-admin/edit-form-comment.php:54
 #: wp-admin/includes/class-wp-application-passwords-list-table.php:28
-#: wp-admin/includes/class-wp-debug-data.php:1120
-#: wp-admin/includes/class-wp-debug-data.php:1215
+#: wp-admin/includes/class-wp-debug-data.php:1118
+#: wp-admin/includes/class-wp-debug-data.php:1213
 #: wp-admin/includes/class-wp-users-list-table.php:369
 #: wp-admin/includes/template.php:482 wp-admin/user-edit.php:407
 #: wp-admin/includes/class-wp-ms-users-list-table.php:194
@@ -19308,9 +19308,9 @@ msgstr "Modifica"
 #: wp-admin/includes/class-wp-debug-data.php:108
 #: wp-admin/includes/class-wp-debug-data.php:113
 #: wp-admin/includes/class-wp-debug-data.php:118
-#: wp-admin/includes/class-wp-debug-data.php:795
-#: wp-admin/includes/class-wp-debug-data.php:804
-#: wp-admin/includes/class-wp-debug-data.php:813
+#: wp-admin/includes/class-wp-debug-data.php:793
+#: wp-admin/includes/class-wp-debug-data.php:802
+#: wp-admin/includes/class-wp-debug-data.php:811
 #: wp-admin/includes/class-wp-links-list-table.php:266
 msgid "No"
 msgstr "No"
@@ -19358,8 +19358,8 @@ msgstr "URL"
 #: wp-admin/includes/class-plugin-installer-skin.php:218
 #: wp-admin/includes/class-theme-installer-skin.php:241
 #: wp-admin/includes/class-wp-comments-list-table.php:471
-#: wp-admin/includes/class-wp-debug-data.php:1134
-#: wp-admin/includes/class-wp-debug-data.php:1229
+#: wp-admin/includes/class-wp-debug-data.php:1132
+#: wp-admin/includes/class-wp-debug-data.php:1227
 #: wp-admin/includes/class-wp-media-list-table.php:323
 #: wp-admin/includes/class-wp-post-comments-list-table.php:25
 #: wp-admin/includes/class-wp-posts-list-table.php:662

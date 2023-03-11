@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-11 11:04:26+0000\n"
+"PO-Revision-Date: 2023-03-01 06:28:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: it\n"
 "Project-Id-Version: Plugins - Complianz &#8211; GDPR/CCPA Cookie Consent - Stable (latest release)\n"
 
@@ -27,7 +27,7 @@ msgstr "Sì, con Clarity"
 msgid "You have %s installed. We recommend saying 'Yes' to self-hosting Google Fonts"
 msgstr "Hai installato %s. Ti consigliamo di selezionare \"Sì\" nell'opzione per ospitare localmente i Google Fonts"
 
-#: integrations/integrations.php:825
+#: integrations/integrations.php:847
 msgid "We have enabled integrations for plugins and services, please double-check your configuration."
 msgstr "Abbiamo abilitato le integrazioni per i plugin e i servizi, ricontrolla la tua configurazione."
 
@@ -276,7 +276,7 @@ msgstr "Hai richieste di dati aperti."
 msgid "Data Requests"
 msgstr "Richieste Dati"
 
-#: DNSMPD/class-DNSMPD-table.php:228
+#: DNSMPD/class-DNSMPD-table.php:227
 msgid "Unresolved"
 msgstr "Irrisolto"
 
@@ -296,7 +296,7 @@ msgstr "Paese"
 msgid "Resolve"
 msgstr "Risolvi"
 
-#: DNSMPD/class-DNSMPD-table.php:128 DNSMPD/class-DNSMPD-table.php:227
+#: DNSMPD/class-DNSMPD-table.php:128 DNSMPD/class-DNSMPD-table.php:226
 #: DNSMPD/csv.php:58
 msgid "Resolved"
 msgstr "Risolto"
@@ -342,16 +342,16 @@ msgstr "Nuova funzione: Richieste dati per le Dichiarazioni sulla Privacy"
 msgid "Generate a comprehensive and legally validated %s"
 msgstr "Genera una comprensiva e legalmente valida %s"
 
-#: class-admin.php:373
+#: class-admin.php:377
 msgid "Copied!"
 msgstr "Copiato!"
 
-#: cookiebanner/class-cookiebanner.php:1326
+#: cookiebanner/class-cookiebanner.php:1333
 msgctxt "as in: click to accept marketing cookies"
 msgid "marketing"
 msgstr "marketing"
 
-#: cookiebanner/class-cookiebanner.php:1326
+#: cookiebanner/class-cookiebanner.php:1333
 msgctxt "as in: click to accept statistics cookies"
 msgid "statistics"
 msgstr "statistiche"
@@ -380,15 +380,15 @@ msgstr "Statistiche senza consenso. Scopri Burst Statistics di Complianz."
 msgid "We have dropped support for creating a cookie banner with Elementor Pro. Your banner defaults to a standard cookie banner."
 msgstr "Abbiamo abbandonato il supporto per la creazione di un cookie banner con Elementor Pro. Il tuo banner di default è un cookie banner standard."
 
-#: class-admin.php:69
+#: class-admin.php:73
 msgid "Get detailed insights into visitors' behavior with Burst Statistics, the privacy-friendly analytics dashboard from Really Simple Plugins"
-msgstr "Ottieni approfondimenti dettagliati sul comportamento dei visitatori con Burst Statistics, la dashboard di analisi rispettoso della privacy di Really Simple Plugins"
+msgstr "Ottieni informazioni dettagliate sul comportamento dei visitatori con Burst Statistics, la dashboard di analisi rispettosa della privacy di Really Simple Plugins."
 
-#: class-admin.php:57
+#: class-admin.php:61
 msgid "Self-hosted and privacy-friendly analytics tool"
 msgstr "Strumento di analisi self-hosted e rispettoso della privacy"
 
-#: class-admin.php:56
+#: class-admin.php:60
 msgid "Burst Statistics from Complianz"
 msgstr "Burst Statistics da Complianz"
 
@@ -508,7 +508,7 @@ msgstr "Con il tracciamento senza cookie di Matomo, è necessaria la configurazi
 msgid "Your site is not configured to show a cookie banner at the moment."
 msgstr "Il tuo sito non è configurato per mostrare un cookie banner al momento."
 
-#: class-document.php:1192
+#: class-document.php:1179
 msgid "Click to accept marketing cookies"
 msgstr "Fai clic per accettare i cookie di marketing"
 
@@ -557,11 +557,11 @@ msgstr "Visualizza le preferenze"
 msgid "Your uploads folder is not writable. Complianz needs this folder to save the cookie banner CSS."
 msgstr "La tua cartella uploads non è scrivibile. Complianz ha bisogno di questa cartella per salvare il CSS del cookie banner."
 
-#: class-document.php:1601
+#: class-document.php:1578
 msgid "You can continue to the next step."
 msgstr "Puoi continuare al passaggio successivo."
 
-#: class-document.php:1601
+#: class-document.php:1578
 msgid "You haven't selected any legal documents to create."
 msgstr "Non hai selezionato alcun documento legale da creare."
 
@@ -1017,7 +1017,7 @@ msgstr "Pulsante"
 msgid "Accept Button"
 msgstr "Pulsante Accetto"
 
-#: integrations/integrations.php:966
+#: integrations/integrations.php:988
 msgid "No required integrations detected yet."
 msgstr "Ancora nessuna integrazione necessaria rilevata."
 
@@ -1190,8 +1190,8 @@ msgstr "Continua la procedura guidata per categorizzare i cookie e configurare i
 #: cookie/class-cookie-admin.php:3321
 msgid "The scan found %s cookie on your domain."
 msgid_plural "The scan found %s cookies on your domain."
-msgstr[0] "La scansione ha trovato 1 cookie nel tuo dominio."
-msgstr[1] "La scansione ha trovato %s cookie nel tuo dominio."
+msgstr[0] "La scansione ha trovato %s cookie nel tuo domain."
+msgstr[1] "La scansione ha trovato %s cookie nel tuo domain."
 
 #: config/steps.php:74
 msgid "To change these settings, please visit the script center."
@@ -1269,35 +1269,35 @@ msgstr "Puoi ripristinare i valori predefiniti, se necessario."
 msgid "We have changed our Cookie Banner template for future capabilities, please check your %sCookie Banner settings%s."
 msgstr "Abbiamo cambiato il nostro modello di Cookie Banner per le funzionalità future, per favore controlla le tue %simpostazioni Banner Cookie%s."
 
-#: class-field.php:3091
+#: class-field.php:3093
 msgid "No site logo configured."
 msgstr "Logo del sito non configurato."
 
-#: class-field.php:3020
+#: class-field.php:3022
 msgid "URLs that should be whitelisted."
 msgstr "URL che dovrebbero essere inseriti nella whitelist."
 
-#: class-field.php:2931
+#: class-field.php:2933
 msgid "waits for %s"
 msgstr "attendi per/il %s"
 
-#: class-field.php:2925
+#: class-field.php:2927
 msgid "No dependency"
 msgstr "Nessuna dipendenza"
 
-#: class-field.php:2902
+#: class-field.php:2904
 msgid "Enable dependency"
 msgstr "Abilita dipendenza"
 
-#: class-field.php:2898
+#: class-field.php:2900
 msgid "Dependency"
 msgstr "Dipendenza"
 
-#: class-field.php:2862
+#: class-field.php:2864
 msgid "The blocked content is an iframe"
 msgstr "Il contenuto bloccato è un iframe"
 
-#: class-field.php:2789
+#: class-field.php:2791
 msgid "URLs that should be blocked before consent."
 msgstr "URL che dovrebbero essere bloccati prima del consenso."
 
@@ -1305,31 +1305,31 @@ msgstr "URL che dovrebbero essere bloccati prima del consenso."
 msgid "Enable"
 msgstr "Abilita"
 
-#: class-field.php:2531 class-field.php:2879
+#: class-field.php:2533 class-field.php:2881
 msgid "Enter the div class or ID that should be targeted."
 msgstr "Inserisci la classe div o l'ID target."
 
-#: class-field.php:2515 class-field.php:2846
+#: class-field.php:2517 class-field.php:2848
 msgid "Enable placeholder"
 msgstr "Abilita segnaposto"
 
-#: class-field.php:2485 class-field.php:2816
+#: class-field.php:2487 class-field.php:2818
 msgid "Category"
 msgstr "Categoria"
 
-#: class-field.php:2468
+#: class-field.php:2470
 msgid "This script contains an async attribute."
 msgstr "Lo script contiene un attributo async."
 
-#: class-field.php:2378 class-field.php:2721 class-field.php:2975
+#: class-field.php:2380 class-field.php:2723 class-field.php:2977
 msgid "Example"
 msgstr "Esempio"
 
-#: class-document.php:2376
+#: class-document.php:2353
 msgid "Click to accept the cookies for this service"
 msgstr "Fai clic per accettare i cookie per questo servizio"
 
-#: class-admin.php:988
+#: class-admin.php:992
 msgid "Advanced features"
 msgstr "Funzioni avanzate"
 
@@ -1367,7 +1367,7 @@ msgstr "Volete usare il reindirizzamento regionale sui documenti pertinenti?"
 
 #: config/questions-wizard.php:898
 msgid "GEO IP based redirect is available in %sPremium%s"
-msgstr "Il reindirizzamento basato su IP GEO è disponibile in %spremium%s"
+msgstr "Reindirizzamento basato su IP GEO è disponibile con %sPremium%s"
 
 #: config/questions-wizard.php:892
 msgid "No, choose a menu per document"
@@ -1469,7 +1469,7 @@ msgstr "Colore"
 msgid "Light"
 msgstr "Chiaro"
 
-#: class-admin.php:325
+#: class-admin.php:329
 msgid "Important: Please %sread about%s Complianz 6.0 before updating. This is a major release and includes changes and new features that might need your attention."
 msgstr "Importante: %sleggi le informazioni%s su Complianz 6.0 prima di aggiornare. Questa è una release importante e include cambiamenti e nuove caratteristiche che potrebbero richiedere la tua attenzione."
 
@@ -1574,15 +1574,15 @@ msgstr "Poiché Complianz gestisce tutte le funzionalità che questo plugin forn
 msgid "We have detected the %s plugin on your website."
 msgstr "Abbiamo rilevato il plugin %s sul tuo sito web."
 
-#: class-document.php:983
+#: class-document.php:970
 msgid "For more information, see the Complianz %sPrivacy Statement%s."
 msgstr "Per ulteriori informazioni, vedere la %sDichiarazione sulla Privacy%s di Complianz."
 
-#: class-document.php:980
+#: class-document.php:967
 msgid "This service does not process any personally identifiable information and does not share any data with the service provider."
 msgstr "Questo servizio non tratta alcuna informazione personale identificabile e non condivide alcun dato con il fornitore del servizio."
 
-#: class-document.php:978
+#: class-document.php:965
 msgid "This website uses the Privacy Suite for WordPress by Complianz to collect and record Browser and Device-based Consent. For this functionality, your IP address is anonymized and stored in our database."
 msgstr "Questo sito web utilizza la Privacy Suite per WordPress di Complianz per raccogliere e registrare il consenso basato su browser e dispositivi. Per questa funzionalità, il tuo indirizzo IP viene anonimizzato e conservato nel nostro database."
 
@@ -1604,7 +1604,7 @@ msgstr "Disattiva Complianz su questa pagina"
 
 #: config/questions-wizard.php:442
 msgid "You can also enable Google Consent Mode."
-msgstr "Puoi anche attivare la modalità di consenso di Google."
+msgstr "Puoi anche abilitare la Modalità Consenso di Google."
 
 #: config/questions-wizard.php:92
 msgid "Does your site have visitors with log-in access to a restricted area of the website?"
@@ -1694,7 +1694,7 @@ msgstr "Recapiti"
 
 #: cookiebanner/settings.php:645
 msgid "This button will reject all cookies except necessary cookies, and dismisses the cookie banner."
-msgstr "Questo pulsante rifiuta tutti i cookie, tranne quelli necessari, e chiude il banner dei cookie."
+msgstr "Questo pulsante rifiuterà tutti i cookie, tranne quelli necessari, e chiude il cookie banner."
 
 #: config/questions-wizard.php:57
 msgid "Which banner do you want to display in other regions?"
@@ -1742,7 +1742,7 @@ msgstr "Descrizione servizio"
 
 #: config/steps.php:82
 msgid "We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date on a regular basis."
-msgstr "Ci connettiamo a questo database open-source usando un'API esterna, che invia i risultati del cookiescan (una lista di cookie trovati, plugin usati e il tuo dominio) a cookiedatabase.org, al solo scopo di fornirti descrizioni accurate e tenerle aggiornate con cadenza settimanale."
+msgstr "Ci colleghiamo a questo database open-source tramite un'API esterna, che invia i risultati della scansione dei cookie (un elenco dei cookie trovati, dei plugin utilizzati e del tuo dominio) a cookiedatabase.org, al solo scopo di fornire descrizioni accurate e di mantenerle aggiornate regolarmente."
 
 #: config/steps.php:80
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by cookiedatabase.org."
@@ -1869,7 +1869,7 @@ msgstr "Impostazioni banner"
 msgid "Appearance"
 msgstr "Aspetto"
 
-#: class-admin.php:462
+#: class-admin.php:466
 msgid "Dismiss"
 msgstr "Ignora"
 
@@ -1997,23 +1997,23 @@ msgstr "La scheda apparirà dopo che il visitatore ha interagito con il banner, 
 msgid "Text on the manage consent tab"
 msgstr "Testo sulla scheda gestisci consenso"
 
-#: class-field.php:2512 class-field.php:2843 integrations/integrations.php:793
+#: class-field.php:2514 class-field.php:2845 integrations/integrations.php:815
 msgid "Placeholder"
 msgstr "Segnaposto"
 
-#: class-field.php:1950
+#: class-field.php:1952
 msgid "No file chosen"
 msgstr "Nessun file scelto"
 
-#: class-field.php:1948
+#: class-field.php:1950
 msgid "Import"
 msgstr "Importa"
 
-#: class-field.php:1942
+#: class-field.php:1944
 msgid "Choose file"
 msgstr "Scegli file"
 
-#: class-field.php:1519 class-field.php:1599
+#: class-field.php:1521 class-field.php:1601
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-accept-button-widget.php:132
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-deny-button-widget.php:131
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:126
@@ -2023,11 +2023,11 @@ msgstr "Scegli file"
 msgid "Left"
 msgstr "Sinistra"
 
-#: class-field.php:1514 class-field.php:1594 cookiebanner/settings.php:179
+#: class-field.php:1516 class-field.php:1596 cookiebanner/settings.php:179
 msgid "Bottom"
 msgstr "In basso"
 
-#: class-field.php:1509 class-field.php:1589
+#: class-field.php:1511 class-field.php:1591
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-accept-button-widget.php:140
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-deny-button-widget.php:139
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:134
@@ -2037,7 +2037,7 @@ msgstr "In basso"
 msgid "Right"
 msgstr "Destra"
 
-#: class-field.php:1504 class-field.php:1584
+#: class-field.php:1506 class-field.php:1586
 msgid "Top"
 msgstr "Sopra"
 
@@ -2047,7 +2047,7 @@ msgstr "la fonte della pagina"
 
 #: functions.php:135
 msgid "Due to the French CNIL guidelines we suggest using the Accept - Deny - View preferences template. For more information, read about the CNIL updated privacy guidelines in this %sarticle%s."
-msgstr "A causa delle linee guida della CNIL francese, suggeriamo di utilizzare il modello di preferenze Accetta + Visualizza. Per maggiori informazioni, leggi le linee guida CNIL aggiornate sulla privacy in questo %sarticolo%s."
+msgstr "A causa delle linee guida della CNIL francese, suggeriamo di utilizzare il modello di preferenza Accetta - Rifiuta - Visualizza. Per maggiori informazioni, leggi le linee guida CNIL aggiornate sulla privacy in questo %sarticolo%s."
 
 #: templates/dashboard/tools-conditional.php:27
 msgid "Create a Data Leak Inventory"
@@ -2143,31 +2143,31 @@ msgstr "Notifiche"
 msgid "Cookie blocker"
 msgstr "Blocco cookie"
 
-#: class-admin.php:885
+#: class-admin.php:889
 msgid "Other plugins"
 msgstr "Altri plugin"
 
-#: class-admin.php:877
+#: class-admin.php:881
 msgid "Tips & Tricks"
 msgstr "Trucchi e Consigli"
 
-#: class-admin.php:864
+#: class-admin.php:868
 msgid "Last update"
 msgstr "Ultimo aggiornamento"
 
-#: class-admin.php:848
+#: class-admin.php:852
 msgid "Remaining tasks (%s)"
 msgstr "Attività restanti (%s)"
 
-#: class-admin.php:846
+#: class-admin.php:850
 msgid "All tasks (%s)"
 msgstr "Tutte le attività (%s)"
 
-#: class-admin.php:829
+#: class-admin.php:833
 msgid "Upgrade to Pro"
-msgstr "Aggiorna a pro"
+msgstr "Aggiorna a Pro"
 
-#: class-admin.php:71 class-admin.php:72 class-admin.php:826
+#: class-admin.php:75 class-admin.php:76 class-admin.php:830
 #: upgrade/upgrade-to-pro.php:190
 msgid "Installed"
 msgstr "Installato"
@@ -2194,12 +2194,12 @@ msgstr "Abilita il tuo ID sito Clicky"
 msgid "Yes, with Clicky"
 msgstr "Sì, con Clicky"
 
-#: class-document.php:1150
+#: class-document.php:1137
 msgctxt "cookie policy"
 msgid "On AMP, you can use the manage consent button on the bottom of the page."
 msgstr "Su AMP, puoi usare il pulsante di gestione del consenso in fondo alla pagina."
 
-#: class-document.php:1149
+#: class-document.php:1136
 msgctxt "cookie policy"
 msgid "You have loaded the Cookie Policy without javascript support."
 msgstr "Hai caricato la Cookie Policy senza supporto javascript."
@@ -2304,11 +2304,11 @@ msgstr "Disabilita la scansione automatica dei cookie."
 msgid "Click to accept reCaptcha validation."
 msgstr "Fai clic per accettare la validazione reCaptcha."
 
-#: class-document.php:1122
+#: class-document.php:1109
 msgid "This message was generated by Complianz GDPR/CCPA."
 msgstr "Questo messaggio è stato generato da Complianz GDPR/CCPA."
 
-#: class-document.php:1118
+#: class-document.php:1105
 msgctxt "notification email"
 msgid "Your legal documents on %s have not been updated in 12 months. Please log in and run the %swizard%s in the Complianz plugin to check if everything is up to date."
 msgstr "Il tuo documento legale su %s non è stato aggiornato da 12 mesi. Esegui l'accesso ed esegui il %swizard%s nel plugin Complianz per controllare che tutti sia aggiornato."
@@ -2329,7 +2329,7 @@ msgctxt "cookie policy"
 msgid "Marketing/Tracking cookies"
 msgstr "Cookie di marketing/tracciamento"
 
-#: class-document.php:1259
+#: class-document.php:1246
 msgid "Legal Document"
 msgstr "Documento Legale"
 
@@ -2349,18 +2349,18 @@ msgstr "Do Not Track e Global Privacy Control non sono ancora rispettati."
 
 #: config/questions-wizard.php:459
 msgid "For the Google Analytics tracking ID, log on and click Admin and copy the tracking ID."
-msgstr "Per il tracking-ID di Google Analytics accedi e fai clic su Admin e copia il Tracking-ID."
+msgstr "Per il tracking ID di Google Analytics accedi e fai clic su Admin e copia il tracking ID."
 
 #: config/questions-wizard.php:454
 msgid "Enter your tracking ID"
-msgstr "Immetti il tuo tracking-ID"
+msgstr "Immetti il tuo tracking ID"
 
 #: templates/cookiepolicy/services.php:9
 msgctxt "cookie policy"
 msgid "Usage"
 msgstr "Utilizzo"
 
-#: functions.php:2147
+#: functions.php:2139
 msgid "Sharing of data is pending investigation"
 msgstr "La condivisione dei dati è in attesa di indagine"
 
@@ -2477,7 +2477,7 @@ msgid "If so, the scan will be extended to the wp-admin part of your site. "
 msgstr "Se è così, la scansione verrà estesa alla parte wp-admin del sito."
 
 #: config/documents/documents.php:22 config/questions-wizard.php:145
-#: gutenberg/build/index.js:1 gutenberg/src/index.js:267
+#: gutenberg/build/index.js:1 gutenberg/src/index.js:300
 #: gutenberg/build/index.js:2204
 msgid "Disclaimer"
 msgstr "Dichiarazione di non responsabilità"
@@ -2541,9 +2541,9 @@ msgstr "Il tuo sito usa Divi. Se usi reCAPTCHA sul tuo sito, potresti dover disa
 
 #: callback-notices.php:100
 msgid "The cookie scan detected cookies from services that share data with Third Parties. According to US privacy laws, your website is considered to sell personal data if it collects and shares any personal data in return for money or services. This includes a service like Google Analytics."
-msgstr "La scansione cookie ha rilevato cookie da servizi che condividono dati con Terze Parti. In conformità con la CCPA, il tuo sito web viene considerato come un venditore di dati secondo i termini della CCPA se colleziona e condivide qualsiasi informazione personale con Terze Parti in cambio di soldi o servizi. Questi includono servizi come Google Analytics."
+msgstr "La scansione dei cookie ha rilevato i cookie di servizi che condividono i dati con terze parti. Secondo le leggi sulla privacy degli Stati Uniti, si considera che il sito web venda dati personali se raccoglie e condivide dati personali in cambio di denaro o servizi. Ciò include un servizio come Google Analytics."
 
-#: class-field.php:2057 cookie/class-cookie-admin.php:3623
+#: class-field.php:2059 cookie/class-cookie-admin.php:3623
 msgid "Services in %s"
 msgstr "Servizi in %s"
 
@@ -2637,23 +2637,23 @@ msgstr "Genera i tuoi documenti, così da aggiungerli direttamente al tuo menu o
 msgid "You haven't created all required pages yet. You can add missing pages in the previous step, or create them manually with the shortcode. You can come back later to this step to add your pages to the desired menu, or do it manually via Appearance > Menu."
 msgstr "Non hai ancora creato tutte le pagina richieste. Puoi aggiungere le pagine mancanti nel prossimo passaggio, o crearli manualmente con il shortcode. Puoi tornare in futuro a questo passaggio per aggiungere le tue pagine al menu desiderato, o farlo manualmente tramite Aspetto > Menu"
 
-#: class-document.php:1557 class-document.php:1643
+#: class-document.php:1534 class-document.php:1620
 msgid "Update pages"
 msgstr "Aggiorna pagine"
 
-#: class-document.php:1641
+#: class-document.php:1618
 msgid "Create missing pages"
 msgstr "Crea pagine mancanti"
 
-#: class-document.php:1595
+#: class-document.php:1572
 msgid "All necessary pages have been created already. You can update the page titles here if you want, then click the \"Update pages\" button."
 msgstr "Tutte le pagine necessarie sono state già create. Puoi aggiornare il titolo delle pagine se desideri, poi clicca il pulsante \"Aggiorna pagine\"."
 
-#: class-document.php:1593
+#: class-document.php:1570
 msgid "The pages marked with X should be added to your website. You can create these pages with a shortcode, a Gutenberg block or use the below \"Create missing pages\" button."
 msgstr "La pagine contrassegnate da una X dovrebbero essere aggiunte al tuo sito web. Puoi creare queste pagine con una shortcode, un blocco Gutenberg o usare il tasta \"Crea pagine mancanti\" sotto."
 
-#: class-field.php:2057 cookie/class-cookie-admin.php:3623
+#: class-field.php:2059 cookie/class-cookie-admin.php:3623
 msgid "Cookies in %s"
 msgstr "Cookie in %s"
 
@@ -2661,7 +2661,7 @@ msgstr "Cookie in %s"
 msgid "Show deleted cookies"
 msgstr "Mostra cookie cancellati"
 
-#: class-document.php:483
+#: class-document.php:481
 msgid "Region %s not activated for %s."
 msgstr "La seguente regione: %s, non è attivata per %s."
 
@@ -2713,7 +2713,7 @@ msgstr "Danese"
 msgid "English"
 msgstr "Inglese"
 
-#: class-admin.php:71 class-admin.php:823
+#: class-admin.php:75 class-admin.php:827
 #: templates/dashboard/documents-conditional.php:41
 #: upgrade/upgrade-to-pro.php:146 upgrade/upgrade-to-pro.php:159
 #: upgrade/upgrade-to-pro.php:176
@@ -2980,7 +2980,7 @@ msgstr "Questa politica sui cookie è stata sincronizzata con %scookiedatabase.o
 
 #: config/general-settings.php:66
 msgid "Complianz provides your Cookie Policy with comprehensive cookie descriptions, supplied by %scookiedatabase.org%s. We connect to this open-source database using an external API, which sends the results of the cookiescan (a list of found cookies, used plugins and your domain) to cookiedatabase.org, for the sole purpose of providing you with accurate descriptions and keeping them up-to-date on a regular basis. For more information, read the %sPrivacy Statement%s"
-msgstr "Complianz fornisce una descrizione comprensiva per la tua Cookie Policy, grazie a %scookiedatabase.org%s. Ci connettiamo a questo database open-source usando un API esterno, che invia il risultato della scansione dei cookie (una lista dei cookie trovati, plugin utilizzati ed il tuo domain) a cookiedatabase.org, per il solo scopo di fornirti descrizioni accurate e mantenerle aggiornate su base settimanale. Per ulteriori informazioni, leggi la %sDichiarazione sulla Privacy%s"
+msgstr "Complianz fornisce la vostra Cookie Policy con descrizioni complete dei cookie, fornite da %scookiedatabase.org%s. Ci connettiamo a questo database open-source utilizzando un'API esterna, che invia i risultati della scansione dei cookie (un elenco dei cookie trovati, dei plugin utilizzati e del tuo dominio) a cookiedatabase.org, al solo scopo di fornire descrizioni accurate e di mantenerle aggiornate regolarmente. Per ulteriori informazioni, leggere %sl'Informativa sulla privacy%s"
 
 #: callback-notices.php:37
 msgid "Please make sure you remove your current implementation to prevent double statistics tracking."
@@ -3018,7 +3018,7 @@ msgstr "Il tuo server non ha CURL installato, il che è richiesto per la scansio
 msgid "(not synced yet)"
 msgstr "(non ancora sincronizzato)"
 
-#: cookie/class-cookie-admin.php:2910 functions.php:2160
+#: cookie/class-cookie-admin.php:2910 functions.php:2152
 msgid "Purpose pending investigation"
 msgstr "Scopo in attesa di indagine"
 
@@ -3186,43 +3186,43 @@ msgstr "Il documento non è aggiornato da Complianz"
 msgid "Document is kept up to date by Complianz"
 msgstr "Il documento è aggiornato da Complianz"
 
-#: class-document.php:1634 templates/dashboard/documents-conditional.php:38
+#: class-document.php:1611 templates/dashboard/documents-conditional.php:38
 #: templates/dashboard/documents.php:51 templates/dashboard/documents.php:53
 msgid "Click to copy the document shortcode"
 msgstr "Fai clic per copiare il shortcode del documento"
 
-#: functions.php:2150
+#: functions.php:2142
 msgctxt "Legal document cookie policy"
 msgid "We use %s for %s."
 msgstr "Usiamo %s per %s."
 
-#: functions.php:2135 functions.php:2145
+#: functions.php:2127 functions.php:2137
 msgid "This data is not shared with third parties."
 msgstr "Questi dati non sono condivisi con terze parti."
 
-#: functions.php:2137 functions.php:2142
+#: functions.php:2129 functions.php:2134
 msgid "For more information, please read the %s%s Privacy Statement%s."
 msgstr "Per ulteriori informazioni, si prega di leggere %s%s Dichiarazione sulla Privacy%s."
 
-#: functions.php:2128
+#: functions.php:2120
 msgid "Miscellaneous"
 msgstr "Varie"
 
-#: class-field.php:2105
+#: class-field.php:2107
 msgid "Add new service"
 msgstr "Aggiungi un nuovo servizio"
 
-#: class-document.php:1301 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:143 gutenberg/build/index.js:2080
+#: class-document.php:1288 gutenberg/build/index.js:1
+#: gutenberg/src/index.js:187 gutenberg/build/index.js:2080
 msgid "Edit document and stop synchronization"
 msgstr "Modifica documento e blocca sincronizzazione"
 
-#: class-document.php:1297 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:142 gutenberg/build/index.js:2079
+#: class-document.php:1284 gutenberg/build/index.js:1
+#: gutenberg/src/index.js:186 gutenberg/build/index.js:2079
 msgid "Synchronize document with Complianz"
 msgstr "Sincronizza documento con Complianz"
 
-#: class-document.php:1275
+#: class-document.php:1262
 msgid "Document status"
 msgstr "Stato del documento"
 
@@ -3311,7 +3311,7 @@ msgstr "UK"
 msgid "Statistics - configuration"
 msgstr "Statistica - configurazione"
 
-#: class-document.php:781 class-document.php:789
+#: class-document.php:768 class-document.php:776
 msgctxt "if phonenumber is entered, this string is part of the sentence \"you may contact %s, via %s or by telephone via %s\""
 msgid "or by telephone on %s"
 msgstr "o per telefono tramite %s"
@@ -3578,15 +3578,15 @@ msgstr "Cookiebanner"
 msgid "Cookiebanner"
 msgstr "Cookiebanner"
 
-#: functions.php:2652
+#: functions.php:2653
 msgid "All consent types"
 msgstr "Tutti i tipi di consenso"
 
-#: functions.php:2650
+#: functions.php:2651
 msgid "Opt-out"
 msgstr "Opt-out"
 
-#: functions.php:2648
+#: functions.php:2649
 msgid "Opt-in"
 msgstr "Opt-in"
 
@@ -3717,7 +3717,7 @@ msgstr "Dichiarazione sulla Privacy (UK)"
 msgid "Privacy Statement (BR)"
 msgstr "Dichiarazione sulla Privacy (BR)"
 
-#: class-admin.php:971
+#: class-admin.php:975
 msgid "Data"
 msgstr "Dati"
 
@@ -4099,7 +4099,7 @@ msgstr "US"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:549
 #: integrations/plugins/gravity-forms.php:148
 #: integrations/plugins/gravity-forms.php:188 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:265 gutenberg/build/index.js:2202
+#: gutenberg/src/index.js:298 gutenberg/build/index.js:2202
 msgid "Privacy Statement"
 msgstr "Dichiarazione sulla Privacy"
 
@@ -4165,7 +4165,7 @@ msgstr "Informazioni mediche"
 
 #: config/purpose.php:39
 msgid "Financial information such as bank account number or credit card number"
-msgstr "Informazione finanziari come numero conto bancario o numero carta di credito"
+msgstr "Informazioni finanziarie come il numero del conto bancario o della carta di credito"
 
 #: config/purpose.php:38
 msgid "Employment history"
@@ -4271,29 +4271,29 @@ msgstr "La procedura guidata è attualmente in fase di modifica da %s"
 msgid "Click '%s' to complete the configuration. You can come back to change your configuration at any time."
 msgstr "Fai clic su '%s' per completare la configurazione. Puoi tornare e modificare la tua configurazione quando vuoi."
 
-#: class-field.php:2289
+#: class-field.php:2291
 msgid "Name of the Third Party with whom you share the data"
 msgstr "Nome della terza parte con il quale condividi i dati"
 
-#: class-field.php:2250
+#: class-field.php:2252
 msgid "Add new %s"
 msgstr "Aggiungi nuovo %s"
 
-#: class-field.php:2236 class-field.php:2346 class-field.php:2417
-#: class-field.php:2555 class-field.php:2761 class-field.php:2942
-#: class-field.php:2998 class-field.php:3052
+#: class-field.php:2238 class-field.php:2348 class-field.php:2419
+#: class-field.php:2557 class-field.php:2763 class-field.php:2944
+#: class-field.php:3000 class-field.php:3054
 msgid "New entry"
 msgstr "Nuova voce"
 
-#: class-field.php:2188
+#: class-field.php:2190
 msgid "%s country"
 msgstr "%s paese"
 
-#: class-field.php:2177
+#: class-field.php:2179
 msgid "A Processing Agreement outside Complianz Privacy Suite"
 msgstr "Un accordo di elaborazione al di fuori del Pacchetto Privacy di Complianz"
 
-#: class-field.php:2154
+#: class-field.php:2156
 msgid "Name of the %s with whom you share the data"
 msgstr "Nome del %s con il quale condividiamo i dati"
 
@@ -4301,11 +4301,11 @@ msgstr "Nome del %s con il quale condividiamo i dati"
 msgid "Privacy Statement URL"
 msgstr "URL informativa sulla privacy"
 
-#: class-document.php:1669 class-document.php:1733
+#: class-document.php:1646 class-document.php:1710
 msgid "Your WordPress version does not support the functions needed for this step. You can upgrade to the latest WordPress version, or add the pages manually to a menu."
 msgstr "La tua versione di WordPress non supporta le funzioni necessarie per questo passaggio. Puoi aggiornare WordPress all'ultima versione oppure aggiungere la pagine manualmente ad un menu."
 
-#: class-document.php:1111
+#: class-document.php:1098
 msgctxt "Subject in notification email"
 msgid "Your legal documents on %s need to be updated."
 msgstr "I tuoi documenti legali riguardo a %s devono essere aggiornati."
@@ -4320,17 +4320,17 @@ msgstr "Stai usando un blocco per la pubblicità. Questo previene il piazzamento
 
 #: templates/integrations/custom-scripts.php:2
 msgid "The script center should be used to add and block third-party scripts and iFrames before consent is given, or when consent is revoked. For example Hotjar and embedded video’s."
-msgstr "Il centro di script deve essere utilizzato per aggiungere e bloccare script di terze parti e iFrame prima che venga fornito il consenso o quando viene revocato il consenso. Ad esempio Hotjar e video incorporati."
+msgstr "Lo script center deve essere utilizzato per aggiungere e bloccare script di terze parti e iFrame prima che venga fornito il consenso o quando questo viene revocato. Ad esempio Hotjar e video incorporati."
 
 #: templates/dashboard/tools-footer.php:2
 msgid "System Status"
 msgstr "Stato Sistema"
 
-#: class-admin.php:861 config/steps.php:21 config/steps.php:98
+#: class-admin.php:865 config/steps.php:21 config/steps.php:98
 msgid "Documents"
 msgstr "Documenti"
 
-#: class-admin.php:314
+#: class-admin.php:318
 msgid "Data successfully cleared"
 msgstr "Dati ripuliti con successo"
 
@@ -4384,13 +4384,13 @@ msgstr "In base alle tue impostazioni ed ai cookie che usi, possono esserci due 
 msgid "With categories, you can let users choose which category of cookies they want to accept."
 msgstr "Con le categorie, puoi permettere agli utenti di scegliere quale categoria di cookie vogliono accettare."
 
-#: class-field.php:2488 class-field.php:2819 config/steps.php:60
+#: class-field.php:2490 class-field.php:2821 config/steps.php:60
 #: cookiebanner/class-cookiebanner.php:834 cookiebanner/settings.php:754
 #: cookiebanner/settings.php:755 cookiebanner/settings.php:756
 msgid "Statistics"
 msgstr "Statistiche"
 
-#: class-field.php:2499 class-field.php:2830
+#: class-field.php:2501 class-field.php:2832
 #: cookiebanner/class-cookiebanner.php:838 cookiebanner/settings.php:791
 #: cookiebanner/settings.php:792 cookiebanner/settings.php:793
 msgid "Marketing"
@@ -4399,7 +4399,7 @@ msgstr "Marketing"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:115
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:116
 msgid "View Preferences"
-msgstr "Visualizza preferenze"
+msgstr "Visualizza le preferenze"
 
 #: cookiebanner/settings.php:670 cookiebanner/settings.php:671
 #: cookiebanner/settings.php:672
@@ -4428,19 +4428,19 @@ msgstr "Se abilitato, il plugin controllerà quale cookie banner ha la migliore 
 msgid "Enable A/B testing"
 msgstr "Abilita test A/B"
 
-#: config/class-config.php:283 config/class-config.php:289
+#: config/class-config.php:286 config/class-config.php:292
 msgid "If you want to run a/b testing to track which banner gets the highest acceptance ratio, %sget premium%s."
 msgstr "Se vuoi avviare un test a/b per seguire quale banner ottiene il più alto rapporto di accettazione. %sottieni premium%s."
 
-#: class-field.php:3124 cookiebanner/class-cookiebanner-table.php:208
+#: class-field.php:3126 cookiebanner/class-cookiebanner-table.php:208
 msgid "Edit"
 msgstr "Modifica"
 
-#: class-field.php:2174
+#: class-field.php:2176
 msgid "No agreement selected"
 msgstr "Nessun accordo selezionato"
 
-#: class-field.php:2165
+#: class-field.php:2167
 msgid "Select the Processing Agreement you made with this %s, or %screate one%s"
 msgstr "Seleziona un accordo di elaborazione che hai creato con %s oppure %screarne uno%s"
 
@@ -4499,13 +4499,13 @@ msgstr "La scansione ha trovato servizi di terze parti nel tuo sito web: %s, que
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:499
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-view-save-preferences-button-widget.php:714
 msgid "Border Color"
-msgstr "Colore bordo"
+msgstr "Colore del bordo"
 
 #: class-wizard.php:723
 msgid "View document"
 msgstr "Visualizza documento"
 
-#: class-field.php:2434 class-field.php:2779 class-field.php:3010
+#: class-field.php:2436 class-field.php:2781 class-field.php:3012
 #: cookiebanner/class-cookiebanner-table.php:240
 #: DNSMPD/class-DNSMPD-table.php:163 DNSMPD/class-DNSMPD.php:485
 #: DNSMPD/class-DNSMPD.php:487 DNSMPD/csv.php:56
@@ -4526,11 +4526,11 @@ msgstr "Sì, con Matomo"
 msgid "Disable cookie banner"
 msgstr "Disattiva cookie banner"
 
-#: class-admin.php:854
+#: class-admin.php:858
 msgid "Your progress"
 msgstr "Il tuo avanzamento"
 
-#: class-admin.php:405 class-admin.php:780 config/class-config.php:701
+#: class-admin.php:409 class-admin.php:784 config/class-config.php:701
 msgid "Upgrade to premium"
 msgstr "Aggiorna a premium"
 
@@ -4546,7 +4546,7 @@ msgstr "Esporta dati personali"
 msgid "Create Processing Agreements"
 msgstr "Crea Accordi di Elaborazione"
 
-#: class-admin.php:869
+#: class-admin.php:873
 msgid "Tools"
 msgstr "Strumenti"
 
@@ -4558,7 +4558,7 @@ msgstr "Rivedi il passo numero %s della procedura guidata per i cambiamenti dei 
 msgid "Please complete the wizard to check if you need a cookie banner."
 msgstr "Completa la procedura guidata per controllare se hai bisogno di un banner dei cookie."
 
-#: class-admin.php:807
+#: class-admin.php:811
 msgid "Your license needs to be %sactivated%s to unlock the wizard"
 msgstr "La tua licenza deve essere %sattivata%s per sbloccare la procedura guidata"
 
@@ -4571,7 +4571,7 @@ msgctxt "intro company info"
 msgid "We need some information to be able to generate your documents."
 msgstr "Abbiamo bisogno di alcune informazioni per poter generare i tuoi documenti."
 
-#: class-admin.php:963 config/steps.php:8 cookiebanner/edit.php:39
+#: class-admin.php:967 config/steps.php:8 cookiebanner/edit.php:39
 #: cookiebanner/settings.php:338 functions.php:624
 msgid "General"
 msgstr "Generale"
@@ -4629,7 +4629,7 @@ msgstr "Qual è il tuo indirizzo?"
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:481
 #: integrations/plugins/elementor-pro/custom-widgets/cmplz-link-widget.php:546
 #: templates/dashboard/documents-conditional.php:10 gutenberg/build/index.js:1
-#: gutenberg/src/index.js:266 gutenberg/build/index.js:2203
+#: gutenberg/src/index.js:299 gutenberg/build/index.js:2203
 msgid "Cookie Policy"
 msgstr "Cookie Policy"
 
@@ -5717,7 +5717,7 @@ msgstr "Isole Aland"
 msgid "Afghanistan"
 msgstr "Afghanistan"
 
-#: config/class-config.php:295 config/general-settings.php:241
+#: config/class-config.php:298 config/general-settings.php:241
 #: cookiebanner/class-cookiebanner-table.php:246
 msgid "Default"
 msgstr "Predefinito"
@@ -5726,7 +5726,7 @@ msgstr "Predefinito"
 msgid "Classic"
 msgstr "Classico"
 
-#: functions.php:2157 proof-of-consent/class-proof-of-consent.php:251
+#: functions.php:2149 proof-of-consent/class-proof-of-consent.php:251
 #: templates/dashboard/documents-conditional.php:65
 #: templates/dashboard/documents-conditional.php:72
 #: templates/dashboard/tools-conditional.php:11
@@ -5788,18 +5788,18 @@ msgstr "Non sono stati rilevati cambiamenti cookie."
 msgid "The wizard has been completed."
 msgstr "La procedura guidata è stata completata."
 
-#: config/class-config.php:278
+#: config/class-config.php:281
 msgid "To enable the warning only for countries with a cookie law, %sget premium%s."
 msgstr "Per abilitare l'avviso solo per i paesi con una legge cookie, %sottieni premium%s."
 
-#: config/class-config.php:274 config/questions-wizard.php:313
+#: config/class-config.php:277 config/questions-wizard.php:313
 #: config/questions-wizard.php:418 config/questions-wizard.php:436
 #: config/questions-wizard.php:680 config/questions-wizard.php:788
 #: integrations/plugins/elementor-pro/elementor-pro.php:189
 msgid "No"
 msgstr "No"
 
-#: config/class-config.php:273 config/questions-wizard.php:417
+#: config/class-config.php:276 config/questions-wizard.php:417
 #: config/questions-wizard.php:435 config/questions-wizard.php:787
 #: integrations/plugins/elementor-pro/elementor-pro.php:188
 msgid "Yes"
@@ -5837,47 +5837,47 @@ msgstr "Ottimo, la procedura guidata principale è completa. Questo significa ch
 msgid "Processing Agreements"
 msgstr "Accordo sull'elaborazione"
 
-#: class-field.php:2212 class-field.php:2324
+#: class-field.php:2214 class-field.php:2326
 msgid "What type of data is shared"
 msgstr "Che tipi di dati vengono condivisi?"
 
-#: class-field.php:2301
+#: class-field.php:2303
 msgid "Third Party country"
 msgstr "Paese terze parti"
 
-#: class-field.php:2356
+#: class-field.php:2358
 msgid "Add new Third Party"
 msgstr "Aggiungi nuovo terze parti"
 
-#: class-field.php:2042
+#: class-field.php:2044
 msgid "Add new cookie"
 msgstr "Aggiungi nuovo cookie"
 
-#: class-field.php:2200 class-field.php:2314 config/steps.php:36
+#: class-field.php:2202 class-field.php:2316 config/steps.php:36
 #: templates/cookie_settings.php:34
 msgid "Purpose"
 msgstr "Scopo"
 
-#: class-admin.php:980
+#: class-admin.php:984
 msgid "Cookies"
 msgstr "Cookie"
 
-#: class-field.php:2012 class-field.php:2229 class-field.php:2340
-#: class-field.php:2551 class-field.php:2938 class-field.php:3048
+#: class-field.php:2014 class-field.php:2231 class-field.php:2342
+#: class-field.php:2553 class-field.php:2940 class-field.php:3050
 msgid "Remove"
 msgstr "Rimuovi"
 
-#: class-field.php:2000
+#: class-field.php:2002
 msgid "Description"
 msgstr "Descrizione"
 
-#: class-field.php:1990 class-field.php:2398 class-field.php:2743
-#: class-field.php:2990
+#: class-field.php:1992 class-field.php:2400 class-field.php:2745
+#: class-field.php:2992
 msgid "Add new"
 msgstr "Aggiungi nuovo"
 
-#: class-field.php:1969 class-field.php:2225 class-field.php:2336
-#: class-field.php:2550 class-field.php:2937 class-field.php:3047
+#: class-field.php:1971 class-field.php:2227 class-field.php:2338
+#: class-field.php:2552 class-field.php:2939 class-field.php:3049
 #: class-wizard.php:114 class-wizard.php:741
 #: templates/CMPLZ_COOKIEBANNER/footer.php:2 templates/cookie_settings.php:87
 #: templates/integrations/footer.php:3 templates/service_settings.php:49
@@ -5885,7 +5885,7 @@ msgstr "Aggiungi nuovo"
 msgid "Save"
 msgstr "Salva"
 
-#: class-field.php:1843 cookiebanner/edit.php:25
+#: class-field.php:1845 cookiebanner/edit.php:25
 msgid "Choose an option"
 msgstr "Scegli un'opzione"
 
@@ -5893,23 +5893,23 @@ msgstr "Scegli un'opzione"
 msgid "This field is required. Please complete the question before continuing"
 msgstr "Questo campo è obbligatorio. Completa la domanda prima di continuare"
 
-#: class-document.php:871
+#: class-document.php:858
 msgid "and"
 msgstr "e"
 
-#: class-document.php:739
+#: class-document.php:726
 msgid "(See annex %s)"
 msgstr "(Vedi allegato %s)"
 
-#: class-document.php:733
+#: class-document.php:720
 msgid "(See paragraph %s)"
 msgstr "(Vedi paragrafo %s)"
 
-#: class-document.php:597
+#: class-document.php:590
 msgid "Annex"
 msgstr "Annesso"
 
-#: class-document.php:1702 class-document.php:1763 class-document.php:1783
+#: class-document.php:1679 class-document.php:1740 class-document.php:1760
 msgid "Select a menu"
 msgstr "Seleziona un menu"
 
@@ -5923,7 +5923,7 @@ msgid_plural "Not all generated documents have been assigned to a menu yet, you 
 msgstr[0] "Il documento generato %s non è stato ancora assegnato a un menu, puoi farlo ora, o saltare questo passo e farlo più tardi."
 msgstr[1] "Non tutti i documenti generati sono ancora stati assegnati a un menu, puoi farlo ora o saltare questo passo e farlo più tardi."
 
-#: class-document.php:1684 class-document.php:1748
+#: class-document.php:1661 class-document.php:1725
 msgid "No menus were found. Skip this step, or %screate a menu%s first."
 msgstr "Non sono stati trovati menu. Salta questo passaggio oppure %screa un menu%s prima."
 
@@ -5935,7 +5935,7 @@ msgstr "Scansione cookie"
 msgid "No cookies detected"
 msgstr "Non sono stati rilevati cookie"
 
-#: cookie/class-cookie-admin.php:3210 DNSMPD/class-DNSMPD-table.php:292
+#: cookie/class-cookie-admin.php:3210 DNSMPD/class-DNSMPD-table.php:291
 #: DNSMPD/csv.php:73
 msgid "%s at %s"
 msgstr "%s a %s"
@@ -5952,28 +5952,28 @@ msgstr "Il tuo sito non necessita un cookie banner, pertanto questa impostazioni
 msgid "Your site requires a cookie banner, which has been enabled."
 msgstr "Il tuo sito necessita di un banner per i cookie, che è stato abilitato."
 
-#: class-admin.php:744 class-admin.php:745 shepherd/tour.php:73
+#: class-admin.php:748 class-admin.php:749 shepherd/tour.php:73
 msgid "Dashboard"
 msgstr "Bacheca"
 
-#: class-admin.php:753 class-admin.php:754
+#: class-admin.php:757 class-admin.php:758
 msgid "Wizard"
 msgstr "Procedura guidata"
 
-#: class-admin.php:733
+#: class-admin.php:737
 msgid "Complianz"
 msgstr "Complianz"
 
-#: class-admin.php:727
+#: class-admin.php:731
 msgid "Complianz %s"
 msgstr "Complianz %s"
 
-#: class-admin.php:399 templates/dashboard/tools-footer.php:1
+#: class-admin.php:403 templates/dashboard/tools-footer.php:1
 msgid "Support"
 msgstr "Supporto"
 
-#: class-admin.php:392 class-admin.php:765 class-admin.php:766
-#: class-admin.php:998 cookiebanner/settings.php:491
+#: class-admin.php:396 class-admin.php:769 class-admin.php:770
+#: class-admin.php:1002 cookiebanner/settings.php:491
 #: integrations/integrations-menu.php:50 templates/dashboard/tools.php:65
 msgid "Settings"
 msgstr "Impostazioni"
